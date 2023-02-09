@@ -1,0 +1,121 @@
+.header-container {
+  /* position: fixed; */
+  /* top: 0%; */
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+  background-color: black;
+  padding: 1rem;
+  align-items: center;
+  z-index: 1000;
+}
+
+.xrc-logo {
+  width: 9rem;
+}
+
+.header-options {
+  display: flex;
+  color: #fff;
+  font-family: "Clash Display Medium";
+}
+
+.header-link {
+  cursor: pointer;
+}
+
+.header-options-button {
+  background: linear-gradient(180deg, #432BFF 0%, #6534FF 100%);
+  font-size: 1rem;
+  font-family: "Clash Display Bold";
+}
+
+@media (min-width: 576px) {
+  .header-container, .footer-container {
+    padding: 2rem !important;
+  }
+  .xrc-logo {
+    width: 12rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .header-container, .footer-container {
+    padding: 2rem !important;
+  }
+  .xrc-logo {
+    width: 12rem;
+  }
+  .header-options-item {
+    margin: 0rem 1rem;
+    font-size: 1rem;
+  }
+  .header-options-button {
+    padding: 0.3rem 1.5rem !important;
+  }
+}
+
+@media (min-width: 1200px) {
+  .header-container, .footer-container {
+    padding: 2rem 3rem !important;
+  }
+  .xrc-logo {
+    width: 13rem;
+  }
+  .header-options-item {
+    margin: 0rem 1.5rem;
+    font-size: 1.1rem;
+  }
+  .header-options-button {
+    padding: 0.4rem 1.7rem !important;
+  }
+}
+
+@media (min-width: 1400px) {
+  .header-container, .footer-container {
+    padding: 2rem 3rem !important;
+  }
+  .xrc-logo {
+    width: 14rem;
+  }
+  .header-options-item {
+    margin: 0rem 1.8rem;
+    font-size: 1.2rem;
+  }
+  .header-options-button {
+    padding: 0.5rem 2rem !important;
+  }
+}
+
+@media (min-width: 1600px) {
+  .header-container, .footer-container {
+    padding: 2rem 4rem !important;
+  }
+  .xrc-logo {
+    width: 15rem;
+  }
+  .header-options-item {
+    margin: 0rem 2.35rem;
+    font-size: 1.4rem;
+  }
+  .header-options-button {
+    padding: 0.6rem 2.2rem !important;
+  }
+}
+
+@media (min-width: 1800px) {
+  .header-container, .footer-container {
+    padding: 3rem 5rem !important;
+  }
+  .xrc-logo {
+    width: 17rem;
+  }
+  .header-options-item {
+    margin: 0rem 2.5rem;
+    font-size: 1.6rem;
+  }
+  .header-options-button {
+    padding: 0.7rem 2.4rem !important;
+  }
+}
