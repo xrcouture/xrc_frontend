@@ -1,0 +1,35 @@
+.about-title{
+    font-family: 'Clash Display Bold';
+    font-size: 2.6rem;
+    color: white;
+    text-align: left;
+}
+.about-subtitle{
+    font-family: 'Clash Display Medium';
+    font-size: .8rem;
+    color: white;
+    text-align: left;
+}
+.about-img{
+    width: 70%;
+    height: auto;
+}
+.about-container{
+    border-bottom: 1px solid #fff;
+    padding: 10%;
+}
+
+.about-img-contaier{
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.refresh-btn{
+    width: 3rem;
+    height: 3rem;
+    background: #454545;
+    border-radius: 50%;
+    position: absolute;
+    left: 45%;
+    margin-bottom: -5%;
+}
