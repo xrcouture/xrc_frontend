@@ -1,7 +1,7 @@
-import { useState } from 'react'
-import Header from './Components/Header';
 import './App.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Header from './Components/Header/Header'
+import Footer from './Components/Footer/Footer';
 import Section1 from './Components/Section1/Section1';
 
 
@@ -9,7 +9,9 @@ function App() {
 
   return (
     <div>
-      <Section1 />
+      <Header />
+      <Footer />
+      {/* <Section1 /> */}
     </div>
   )
 }
