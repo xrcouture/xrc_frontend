@@ -12,11 +12,11 @@ function App() {
   return (
     <div>
       <Header />
-      <Footer />
       <Section1 />
       <Brand />
       <Section2 />
       <Brand />
+      <Footer />
     </div>
   )
 }
