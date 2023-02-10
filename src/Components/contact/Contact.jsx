@@ -2,6 +2,9 @@ import React from 'react'
 import './contact.css'
 import * as Yup from "yup";
 import { Formik } from 'formik';
+import hand1 from '../../assets/hand1.png'
+import hand2 from '../../assets/hand2.png'
+import hand3 from '../../assets/hand3.png'
 
 function Contact() {
   const phoneRegExp = /^((\\+[1-9]{1,4}[ \\-]*)|(\\([0-9]{2,3}\\)[ \\-]*)|([0-9]{2,4})[ \\-]*)*?[0-9]{3,4}?[ \\-]*[0-9]{3,4}?$/
@@ -23,28 +26,27 @@ function Contact() {
   });
   return (
     <div className='contact'>
-      <div className='row'>
-        <div className='col-sm-6'>
-          <div className='contact-form'>
+        <div className='bg-contact'></div>
+      <div className='row contact-row'>
+      <div className='col-sm-6 more-info-container p-4'>
+        <h1 className='more-info-title'>For More Information - </h1>
+        <div className='more-info-subtitle mt-4'>
+          <p className='more-info-sub'><b>For Partnerships : </b> <span style={{fontFamily:"Clash Display Light"}}>Partnerships@xrcoture.com</span></p>
+          <p className='more-info-sub'><b>For Press enquires : </b><span style={{fontFamily:"Clash Display Light"}}>Press@xrcoture.com</span></p>
+          <p className='more-info-sub'><b>For general enquires :</b><span style={{fontFamily:"Clash Display Light"}}>General@xrcoture.com</span></p>
+        </div>
+      </div>
+        <div className='col-sm-6 position-relative p-0 d-flex justify-content-center'>
+          <div className='contact-form position-relative p-4'>
             <h1 className='contact-title'>Contact Now</h1>
             <p className='contact-subtitle'>
             In diam consequat nec eu. Eu sem nec vel, sollicitudin ipsum viverra sed nibh amet. Nunc, et pharetra, duis tortor dictum nisl. Id vestibulum tincidunt adipiscing gravida risus.
             </p>
+            
             <div className='form-container'>
             <Formik
                   initialValues={{name:"", email: '', phone: '',message:"" }}
                   validationSchema={SignUpSchema}
-                  // validate={values => {
-                  //   const errors = {};
-                  //   if (!values.email) {
-                  //     errors.email = 'Required';
-                  //   } else if (
-                  //     !/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i.test(values.email)
-                  //   ) {
-                  //     errors.email = 'Invalid email address';
-                  //   }
-                  //   return errors;
-                  // }}
                   onSubmit={(values, { setSubmitting }) => {
                     setTimeout(() => {
                       alert(JSON.stringify(values, null, 2));
@@ -62,7 +64,7 @@ function Contact() {
                     isSubmitting,
                     /* and other goodies */
                   }) => (
-                    <form onSubmit={handleSubmit}>
+                    <form onSubmit={handleSubmit} className="contact-fom">
                       <input
                         type="text"
                         name="name"
@@ -71,7 +73,7 @@ function Contact() {
                         value={values.name}
                         placeholder="Name"
                       />
-                      <p className='error text-danger'>{errors.name && touched.name && errors.name}</p>
+                      <p className='error text-danger contact-subtitle'>{errors.name && touched.name && errors.name}</p>
                       <input
                         type="email"
                         name="email"
@@ -80,7 +82,7 @@ function Contact() {
                         value={values.email}
                         placeholder="Email"
                       />
-                      <p className='error text-danger'>{errors.email && touched.email && errors.email}</p>
+                      <p className='error text-danger contact-subtitle'>{errors.email && touched.email && errors.email}</p>
                       <input
                         type="phone"
                         name="phone"
@@ -89,7 +91,7 @@ function Contact() {
                         value={values.phone}
                         placeholder="Phone"
                       />
-                      <p className='error text-danger'>{errors.phone && touched.phone && errors.phone}</p>
+                      <p className='error text-danger contact-subtitle'>{errors.phone && touched.phone && errors.phone}</p>
                       <input
                         type="text"
                         name="message"
@@ -98,7 +100,7 @@ function Contact() {
                         value={values.message}
                         placeholder="Message"
                       />
-                      <p className='error text-danger'>{errors.message && touched.message && errors.message}</p>
+                      <p className='error text-danger contact-subtitle'>{errors.message && touched.message && errors.message}</p>
                       <button type="submit" className='footer-subscribe-button' style={{fontFamily:"Clash Display Light"}} disabled={isSubmitting}>
                         Submit Form
                       </button>
@@ -108,7 +110,6 @@ function Contact() {
             </div>
           </div>
         </div>
-        <div className='col-sm-6'></div>
       </div>
     </div>
   )

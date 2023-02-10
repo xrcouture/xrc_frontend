@@ -4,6 +4,7 @@ import img from '../../assets/about-img.png'
 import { IoMdRefresh } from 'react-icons/io';
 import svg from '../../assets/done.svg'
 import AnimatedText from 'react-animated-text-content';
+import vid from '../../assets/high2.mp4'
 
 function Section1() {
     // const text = document.querySelector(".text p")
@@ -81,7 +82,8 @@ function Section1() {
                 
                 </div>
             <div className='col-sm-6 about-img-contaier'>
-                <img src={img} alt="" className='about-img' />
+                <video src={vid} className='about-img' autoPlay  muted></video>
+                {/* <img src={img} alt=""  /> */}
             </div>
         </div>
     </div>
