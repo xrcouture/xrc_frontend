@@ -2,7 +2,9 @@ import React from 'react'
 import './contact.css'
 import * as Yup from "yup";
 import { Formik } from 'formik';
-
+// import hand1 from '../../assets/hand1.png'
+// import hand2 from '../../assets/hand2.png'
+// import hand3 from '../../assets/hand3.png'
 
 function Contact() {
   const phoneRegExp = /^((\\+[1-9]{1,4}[ \\-]*)|(\\([0-9]{2,3}\\)[ \\-]*)|([0-9]{2,4})[ \\-]*)*?[0-9]{3,4}?[ \\-]*[0-9]{3,4}?$/
@@ -28,9 +30,9 @@ function Contact() {
       <div className='col-sm-6 more-info-container p-4'>
         <h1 className='more-info-title'>For More Information - </h1>
         <div className='more-info-subtitle mt-4'>
-          <p className='more-info-sub'><b>For Partnerships : </b> <span style={{fontFamily:"Clash Display Light"}}>Partnerships@xrcoture.com</span></p>
-          <p className='more-info-sub'><b>For Press enquires : </b><span style={{fontFamily:"Clash Display Light"}}>Press@xrcoture.com</span></p>
-          <p className='more-info-sub'><b>For general enquires :</b><span style={{fontFamily:"Clash Display Light"}}>General@xrcoture.com</span></p>
+          <p className='more-info-sub'><b>For partnerships : </b> <span style={{fontFamily:"Clash Display Light"}}> &nbsp;partnerships@xrcoture.com</span></p>
+          <p className='more-info-sub'><b>For press enquires : </b><span style={{fontFamily:"Clash Display Light"}}> &nbsp;press@xrcoture.com</span></p>
+          <p className='more-info-sub'><b>For general enquires :</b><span style={{fontFamily:"Clash Display Light"}}> &nbsp;general@xrcoture.com</span></p>
         </div>
       </div>
         <div className='col-sm-6 position-relative p-0 d-flex justify-content-center'>

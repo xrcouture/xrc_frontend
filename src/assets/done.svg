@@ -8,16 +8,18 @@
     font-family: Clash Display Light; 
     fill: #fff;
     text-transform: uppercase;
-    font-size: 23px;
+    font-size: 20px;
+    letter-spacing: 3px;
+    word-spacing: 5px;
+    <!-- padding: 10px; -->
 }
-.coffee { letter-spacing: 11px; }
 
 </style>
 </defs>
 <circle cx="100" cy="100" r="100" fill="#454545" id="background" />
 <!-- <circle fill="none" stroke="#FFF" cx="100" cy="100" r="93.8" stroke-width="3" id="rim" /> -->
 <text>
-    <textPath xlink:href="#starbuckscircle">CROSS METAVERSE WEARABLES</textPath>
+    <textPath xlink:href="#starbuckscircle">CROSS-PLATFORM WEARABLES</textPath>
 </text>
 <!-- <text dx="10" textLength="160" class="coffee">
     <textPath xlink:href="#coffeecircle">METAVERSE</textPath>
