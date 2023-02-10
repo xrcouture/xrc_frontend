@@ -5,6 +5,7 @@ import Footer from './Components/Footer/Footer';
 import Section1 from './Components/Section1/Section1';
 import Section2 from './Components/Section2/Section2';
 import Brand from './Components/brands/Brand';
+import Contact from './Components/contact/Contact';
 
 
 function App() {
@@ -12,10 +13,11 @@ function App() {
   return (
     <div>
       <Header />
-      <Section1 />
+      {/* <Section1 />
       <Brand />
       <Section2 />
-      <Brand />
+      <Brand /> */}
+      <Contact />
       <Footer />
     </div>
   )

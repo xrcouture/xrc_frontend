@@ -7,19 +7,19 @@ import logo4 from '../../assets/xrc-logo/4.png'
 import logo5 from '../../assets/xrc-logo/5.png'
 function Brand() {
   return (
-    <div style={{borderBottom: "2px solid #fff", borderTop: "2px solid #fff"}}>
+    <div style={{borderBottom: ".5px solid #fff", borderTop: ".5px solid #fff"}}>
       <section class="logoMarqueeSection">
 	<div class="" id="logoMarqueeSection">
 		<div class="default-content-container flex items-center">
 			<div class="default-content-container-inner marquee-wrapper relative overflow-hidden inline-block">
-				<div class="marquee" style={{animationDuration: "57s"}}>
+				<div class="marquee" style={{animationDuration: "30s"}}>
 					<a target="_blank"><img src={logo1} title="" class="marqueelogo" style={{width: "auto", maxWidth: "none"}} /></a>
 					<a target="_blank"><img src={logo2} title="" class="marqueelogo" style={{width: "auto", maxWidth: "none"}} /></a>
 					{/* <a target="_blank"><img src={logo3} title="" class="marqueelogo" style={{width: "auto", maxWidth: "none"}} /></a> */}
 					<a target="_blank"><img src={logo4} title="" class="marqueelogo" style={{width: "auto", maxWidth: "none"}} /></a>
 					<a target="_blank"><img src={logo5} title="" class="marqueelogo" style={{width: "auto", maxWidth: "none"}} /></a>
 				</div>
-        <div class="marquee" style={{animationDuration: "57s"}}>
+        <div class="marquee" style={{animationDuration: "30s"}}>
         <a target="_blank"><img src={logo1} title="" class="marqueelogo" style={{width: "auto", maxWidth: "none"}} /></a>
 					<a target="_blank"><img src={logo2} title="" class="marqueelogo" style={{width: "auto", maxWidth: "none"}} /></a>
 					{/* <a target="_blank"><img src={logo3} title="" class="marqueelogo" style={{width: "auto", maxWidth: "none"}} /></a> */}

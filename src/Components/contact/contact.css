@@ -1,0 +1,29 @@
+.contact{
+    padding-top: 5%;
+    padding-bottom: 5%;
+    background: linear-gradient(180deg, #492DFF 0%, #6033FF 100%);
+}
+.contact-form{
+    background-color: black;
+    padding: 5%;
+}
+input{
+    width: 100%;
+    background: transparent;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid white;
+    margin-top: 2rem ;
+    color: white;
+    font-family: 'Clash Display Medium';
+    padding: 5px;
+}
+.contact-title{
+    font-family: 'Clash Display Bold';
+    text-transform: uppercase;
+    color: white;
+}
+.contact-subtitle{
+    font-family: 'Clash Display Light';
+    color: white;
+}

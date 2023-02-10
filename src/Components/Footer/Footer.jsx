@@ -1,5 +1,6 @@
 import React from 'react'
 import './footer.css'
+import AnimatedText from 'react-animated-text-content';
 
 const Footer = () => {
 
@@ -12,7 +13,26 @@ const Footer = () => {
 
         <div className='footer-options-container-one'>
 
-          <h1 className='footer-options-title'>WEAR CLOTHES THAT DON'T EXIST.</h1>
+        <AnimatedText
+                    type="words" // animate words or chars
+                    animation={{
+                        x: '200px',
+                        y: '200px',
+                        scale: 1.1,
+                        ease: 'ease-in-out',
+                    }}
+                    animationType="wave"
+                    interval={0.2}
+                    duration={1}
+                    tag="p"
+                    className="animated-paragraph footer-options-title"
+                    includeWhiteSpaces
+                    threshold={0.5}
+                    rootMargin="20%"
+                    >
+                    WEAR CLOTHES THAT DON'T EXIST.
+                    </AnimatedText>
+
 
           <div className='footer-subscribe-form'>
 

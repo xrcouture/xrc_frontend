@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 200 200">
+<title>Starbucks Coffee Logo</title>
+<defs>
+    <path d="M15,100a85,85 0 1,0 170,0a85,85 0 1,0 -170,0" id="coffeecircle" />
+    <path d="M100,37c34.8,0,63,28.2,63,63s-28.2,63-63,63s-63-28.2-63-63S65.2,37,100,37z" id="starbuckscircle" transform="rotate(-85 100 100)" />
+    <style> 
+    text { 
+    font-family: Clash Display Light; 
+    fill: #fff;
+    text-transform: uppercase;
+    font-size: 22px;
+}
+.coffee { letter-spacing: 10  px; }
+
+</style>
+</defs>
+<circle cx="100" cy="100" r="100" fill="#454545" id="background" />
+<!-- <circle fill="none" stroke="#FFF" cx="100" cy="100" r="93.8" stroke-width="3" id="rim" /> -->
+<text>
+    <textPath xlink:href="#starbuckscircle">CROSS METAVERSE WEARABLES </textPath>
+</text>
+<!-- <text dx="10" textLength="160" class="coffee">
+    <textPath xlink:href="#coffeecircle">METAVERSE</textPath>
+</text>
+<text dx="155" textLength="160" class="coffee">
+    <textPath xlink:href="#starbuckscircle">WEARABLES</textPath>
+</text> -->
+</svg>

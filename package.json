@@ -10,12 +10,15 @@
   },
   "dependencies": {
     "bootstrap": "^5.2.3",
+    "formik": "^2.2.9",
     "hamburger-react": "^2.5.0",
     "jquery": "^3.6.3",
     "react": "^18.2.0",
+    "react-animated-text-content": "^1.0.1",
     "react-dom": "^18.2.0",
     "react-icons": "^4.7.1",
-    "reactstrap": "^9.1.5"
+    "reactstrap": "^9.1.5",
+    "yup": "^1.0.0"
   },
   "devDependencies": {
     "@types/react": "^18.0.27",
