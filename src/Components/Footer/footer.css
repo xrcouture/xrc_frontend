@@ -1,0 +1,298 @@
+.footer-container {
+  color: #fff;
+  background-color: black;
+  width: 100%;
+  padding: 1rem;
+  /* border-top: 1px solid #fff; */
+}
+
+.footer-options-title {
+  font-size: 1.8rem;
+  font-family: "Clash Display Bold";
+}
+
+.footer-subscribe-form {
+  margin-top: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 1.5rem;
+  border-bottom: 2px solid #422BFF;
+  width: 100%;
+}
+
+.footer-subscribe-text {
+  font-family: "Clash Display Light";
+  font-size: 0.9rem;
+  background: transparent;
+  border: none;
+  color: #fff;
+  width: 65%;
+}
+
+.footer-subscribe-text::placeholder {
+  color: #fff;
+  opacity: 1;
+}
+
+.footer-subscribe-button {
+  font-family: "Clash Display Bold";
+  background: linear-gradient(180deg, #432BFF 0%, #6534FF 100%);
+  font-size: 0.95rem;
+  padding: 0.8rem 1rem;
+}
+
+.footer-logo-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-logo {
+  width: 10rem;
+}
+
+.footer-logo-subtitle {
+  font-family: "Clash Display Light";
+  font-size: 0.8rem;
+}
+
+.footer-links {
+  font-family: "Clash Display Medium";
+}
+
+.social-icons {
+  color: black;
+  background-color: #fff;
+  margin: 0rem 0.5rem;
+  padding: 0.35rem;
+  font-size: 1.5rem;
+  border-radius: 100%;
+}
+
+textarea:focus, input:focus{
+  outline: none;
+}
+
+.footer-links > div, .social-icons {
+  cursor: pointer;
+}
+
+@media (min-width: 425px) {
+  .footer-options-title {
+    font-size: 2.3rem;
+  }
+  .footer-logo {
+    width: 12rem;
+  }
+  .footer-logo-subtitle {
+    font-family: "Clash Display Light";
+    font-size: 0.95rem;
+  }
+  .footer-subscribe-text {
+    font-size: 0.95rem;
+  }
+}
+
+@media (min-width: 576px) {
+  .footer-options-title {
+    font-size: 3rem;
+  }
+  .footer-logo {
+    width: 14rem;
+  }
+  
+  .footer-logo-subtitle {
+    font-family: "Clash Display Light";
+    font-size: 1.1rem;
+  }
+  .social-icons {
+    margin: 0rem 0.8rem;
+    padding: 0.5rem;
+    font-size: 2rem;
+  }
+  .footer-links {
+    font-size: 1.1rem;
+  }
+  .footer-subscribe-text {
+    font-size: 1.1rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .footer-options-container {
+    border-right: 2px solid #fff;
+  }
+  .footer-container {
+    padding-right: 0 !important;
+  }
+  .footer-options-title {
+    font-size: 2.8rem;
+  }
+  .footer-logo {
+    width: 11rem;
+  }
+  .footer-logo-subtitle {
+    font-family: "Clash Display Light";
+    font-size: 0.855rem;
+  }
+  .social-icons {
+    margin: 0rem 1.2rem 0rem 0rem;
+    padding: 0.4rem;
+    font-size: 1.4rem;
+  }
+  .footer-links > div {
+    font-size: 0.855rem;
+    margin-right: 2rem;
+  }
+  .footer-subscribe-form {
+    width: 22rem;
+  }
+  .footer-subscribe-text {
+    font-size: 0.855rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .footer-options-title {
+    font-size: 3.3rem;
+  }
+  .footer-logo {
+    width: 12rem;
+  }
+  
+  .footer-logo-subtitle {
+    font-family: "Clash Display Light";
+    font-size: 0.95rem;
+  }
+  .social-icons {
+    margin: 0rem 1.5rem 0rem 0rem;
+    padding: 0.5rem;
+    font-size: 1.5rem;
+  }
+  .footer-links > div {
+    font-size: 0.95rem;
+    margin-right: 3rem;
+  }
+  .footer-subscribe-text {
+    font-size: 0.95rem;
+  }
+  .footer-subscribe-form {
+    width: 25rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .footer-options-title {
+    font-size: 3.8rem;
+  }
+  .footer-logo {
+    width: 13rem;
+  }
+  
+  .footer-logo-subtitle {
+    font-family: "Clash Display Light";
+    font-size: 1.05rem;
+  }
+  .social-icons {
+    margin: 0rem 1.6rem 0rem 0rem;
+    padding: 0.6rem;
+    font-size: 1.5rem;
+  }
+  .footer-links > div {
+    font-size: 1.05rem;
+    margin-right: 3rem;
+  }
+  .footer-subscribe-text {
+    font-size: 1.05rem;
+  }
+  .footer-subscribe-form {
+    width: 28rem;
+  }
+}
+
+@media (min-width: 1400px) {
+  .footer-options-title {
+    font-size: 4.5rem;
+  }
+  .footer-logo {
+    width: 14rem;
+  }
+  
+  .footer-logo-subtitle {
+    font-family: "Clash Display Light";
+    font-size: 1.1rem;
+  }
+  .social-icons {
+    margin: 0rem 2.2rem 0rem 0rem;
+    padding: 0.6rem;
+    font-size: 1.6rem;
+  }
+  .footer-links > div {
+    font-size: 1.1rem;
+    margin-right: 3rem;
+  }
+  .footer-subscribe-text {
+    font-size: 1.1rem;
+  }
+  .footer-subscribe-form {
+    width: 32rem;
+  }
+}
+
+@media (min-width: 1600px) {
+  .footer-options-title {
+    font-size: 4.9rem;
+  }
+  .footer-logo {
+    width: 14rem;
+  }
+  
+  .footer-logo-subtitle {
+    font-size: 1.15rem;
+  }
+  .social-icons {
+    margin: 0rem 2rem 0rem 0rem;
+    padding: 0.6rem;
+    font-size: 1.7rem;
+  }
+  .footer-links > div {
+    font-size: 1.15rem;
+    margin-right: 2.9rem;
+  }
+  .footer-subscribe-text {
+    font-size: 1.15rem;
+  }
+  .footer-subscribe-form {
+    width: 35rem;
+  }
+}
+
+@media (min-width: 1800px) {
+  .footer-options-title {
+    font-size: 5.45rem;
+  }
+  .footer-logo {
+    width: 16rem;
+  }
+  
+  .footer-logo-subtitle {
+    font-size: 1.255rem;
+  }
+  .social-icons {
+    margin: 0rem 2rem 0rem 0rem;
+    padding: 0.7rem;
+    font-size: 2rem;
+  }
+  .footer-links > div {
+    font-size: 1.255rem;
+    margin-right: 4rem;
+  }
+  .footer-subscribe-text {
+    font-size: 1.255rem;
+  }
+  .footer-subscribe-form {
+    width: 39rem;
+  }
+}
