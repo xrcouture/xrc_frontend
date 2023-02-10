@@ -39,9 +39,10 @@ const Header = () => {
     <div className='header-container'>
       <div className='xrc-logo-container'>
         <img className='xrc-logo' src={headerLogo}></img>
+        <div className='logo-border'></div>
       </div>
 
-      <div className='header-options d-none d-md-flex align-items-center p-4'>
+      <div className='header-options d-none d-md-flex align-items-center'>
 
         {/* <div className='header-options-links d-none d-sm-flex'> */}
           <div className='header-link header-options-item'>Web2 Collection</div>

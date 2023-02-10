@@ -8,7 +8,7 @@
 
 .footer-options-title {
   font-size: 1.8rem;
-  font-family: "Clash Display Bold";
+  font-family: "Clash Display SemiBold";
 }
 
 .footer-subscribe-form {
@@ -28,6 +28,7 @@
   border: none;
   color: #fff;
   width: 65%;
+  margin-top: 0 !important;
 }
 
 .footer-subscribe-text::placeholder {
@@ -122,7 +123,7 @@ textarea:focus, input:focus{
 
 @media (min-width: 768px) {
   .footer-options-container {
-    border-right: 2px solid #fff;
+    /* border-right: 0.5px solid #fff; */
   }
   .footer-container {
     padding-right: 0 !important;

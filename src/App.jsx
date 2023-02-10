@@ -16,8 +16,8 @@ function App() {
       <Section1 />
       <Brand />
       <Section2 />
-      <Brand />
       <Contact />
+      <Brand />
       <Footer />
     </div>
   )

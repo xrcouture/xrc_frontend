@@ -1,6 +1,6 @@
 .header-container {
-  /* position: fixed; */
-  /* top: 0%; */
+  position: fixed;
+  top: 0%;
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -8,11 +8,13 @@
   background-color: black;
   align-items: center;
   z-index: 1000;
+  height: 5rem;
+    border-bottom: .5px solid white;
 }
 .xrc-logo-container{
   padding: 1rem;
-  border-right: .5px solid white;
 }
+
 .xrc-logo {
   width: 9rem;
 }
@@ -33,8 +35,16 @@
   font-family: "Clash Display Bold";
 }
 
+.logo-border {
+  /* position: absolute;
+  border-right: 0.5px solid #fff;
+  width: calc(12.5% + 100px);
+  height: 5rem;
+  top: 0; */
+}
+
 @media (min-width: 576px) {
-   .footer-container {
+  .header-container, .footer-container {
     padding: 2rem !important;
   }
   .xrc-logo {
@@ -43,8 +53,8 @@
 }
 
 @media (min-width: 768px) {
-   .footer-container {
-    padding: 2rem !important;
+  .header-container, .footer-container {
+    padding: 1rem !important;
   }
   .xrc-logo {
     width: 12rem;
@@ -56,11 +66,17 @@
   .header-options-button {
     padding: 0.3rem 1.5rem !important;
   }
+  .header-container {
+    height: 6rem;
+  }
+  /* .logo-border {
+    height: 6rem;
+  }   */
 }
 
 @media (min-width: 1200px) {
-   .footer-container {
-    padding: 2rem 3rem !important;
+  .header-container, .footer-container {
+    padding: 1rem 3rem !important;
   }
   .xrc-logo {
     width: 13rem;
@@ -75,8 +91,8 @@
 }
 
 @media (min-width: 1400px) {
-  .footer-container {
-    padding: 2rem 3rem !important;
+  .header-container, .footer-container {
+    padding: 1.15rem 3rem !important;
   }
   .xrc-logo {
     width: 14rem;
@@ -88,11 +104,17 @@
   .header-options-button {
     padding: 0.5rem 2rem !important;
   }
+  .header-container {
+    height: 7rem;
+  }
+  /* .logo-border {
+    height: 7rem;
+  }   */
 }
 
 @media (min-width: 1600px) {
-   .footer-container {
-    padding: 2rem 4rem !important;
+  .header-container, .footer-container {
+    padding: 1.5rem 4rem !important;
   }
   .xrc-logo {
     width: 15rem;
@@ -107,8 +129,8 @@
 }
 
 @media (min-width: 1800px) {
-   .footer-container {
-    padding: 3rem 5rem !important;
+  .header-container, .footer-container {
+    padding: 2rem 5rem !important;
   }
   .xrc-logo {
     width: 17rem;
@@ -120,4 +142,10 @@
   .header-options-button {
     padding: 0.7rem 2.4rem !important;
   }
+  .header-container {
+    height: 8rem;
+  }
+  /* .logo-border {
+    height: 8rem;
+  }   */
 }
