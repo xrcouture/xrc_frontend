@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import './header.css'
 
 import { Squeeze as Hamburger } from 'hamburger-react'
+import {Link} from 'react-router-dom'
 
 const Header = () => {
 
@@ -37,10 +38,10 @@ const Header = () => {
 
   return (
     <div className='header-container'>
-      <div className='xrc-logo-container'>
+      <Link to={'/'} className='xrc-logo-container'>
         <img className='xrc-logo' src={headerLogo}></img>
         <div className='logo-border'></div>
-      </div>
+      </Link>
 
       <div className='header-options d-none d-md-flex align-items-center'>
 
@@ -49,7 +50,10 @@ const Header = () => {
           <div className='header-link header-options-item'>Web3 Collection</div>
         {/* </div> */}
 
-        <button className='header-options-button header-options-item'>Contact Us</button>
+        <button className='header-options-button header-options-item'>
+          <Link to={'/contact'} style={{color:"white"}}>Contact Us</Link>
+          
+          </button>
         
       </div>
 

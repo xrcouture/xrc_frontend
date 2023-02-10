@@ -9,6 +9,7 @@
     --more-info-subtitle-line:11px;
 }
 .contact{
+    margin-top: 5rem;
     position: relative;
     padding:5%;
     background: linear-gradient(180deg, #492DFF 0%, #6033FF 100%);
