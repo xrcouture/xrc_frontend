@@ -16,7 +16,8 @@ function App() {
       <Section1 />
       <Brand />
       <Section2 />
-      <Contact />
+      <Brand />
+      {/* <Contact /> */}
       <Brand />
       <Footer />
     </div>
