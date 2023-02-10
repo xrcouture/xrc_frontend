@@ -3,9 +3,10 @@
   background-color: black;
   width: 100%;
   padding: 1rem;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
   /* border-top: 1px solid #fff; */
 }
-
 .footer-options-title {
   font-size: 1.8rem;
   font-family: "Clash Display SemiBold";
@@ -123,7 +124,7 @@ textarea:focus, input:focus{
 
 @media (min-width: 768px) {
   .footer-options-container {
-    /* border-right: 0.5px solid #fff; */
+    border-right: 0.5px solid #fff;
   }
   .footer-container {
     padding-right: 0 !important;

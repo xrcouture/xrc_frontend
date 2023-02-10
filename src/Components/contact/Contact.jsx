@@ -2,13 +2,10 @@ import React from 'react'
 import './contact.css'
 import * as Yup from "yup";
 import { Formik } from 'formik';
-import hand1 from '../../assets/hand1.png'
-import hand2 from '../../assets/hand2.png'
-import hand3 from '../../assets/hand3.png'
+
 
 function Contact() {
   const phoneRegExp = /^((\\+[1-9]{1,4}[ \\-]*)|(\\([0-9]{2,3}\\)[ \\-]*)|([0-9]{2,4})[ \\-]*)*?[0-9]{3,4}?[ \\-]*[0-9]{3,4}?$/
-
 
   const SignUpSchema = Yup.object().shape({
     name: Yup.string()
