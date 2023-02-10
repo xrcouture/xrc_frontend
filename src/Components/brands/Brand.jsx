@@ -7,7 +7,7 @@ import logo4 from '../../assets/xrc-logo/4.png'
 import logo5 from '../../assets/xrc-logo/5.png'
 function Brand() {
   return (
-    <div style={{borderBottom: "2px solid #fff", borderTop: "2px solid #fff"}}>
+    <div style={{borderBottom: ".5px solid #fff", borderTop: ".5px solid #fff"}}>
       <section class="logoMarqueeSection">
 	<div class="" id="logoMarqueeSection">
 		<div class="default-content-container flex items-center">

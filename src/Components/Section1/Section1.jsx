@@ -41,7 +41,7 @@ function Section1() {
                         scale: 1.1,
                         ease: 'ease-in-out',
                     }}
-                    animationType="float"
+                    animationType="lights"
                     interval={0.05}
                     duration={1}
                     tag="p"
