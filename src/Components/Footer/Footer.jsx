@@ -24,8 +24,8 @@ const Footer = () => {
               ease: 'ease-in-out',
             }}
             animationType="wave"
-            interval={0.2}
-            duration={1}
+            interval={0.05}
+            duration={0.5}
             tag="p"
             className="animated-paragraph footer-options-title pt-5"
             includeWhiteSpaces
