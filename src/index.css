@@ -41,6 +41,11 @@ code {
   src: url("./ClashDisplay_Complete/Fonts/WEB/fonts/ClashDisplay-Medium.ttf");
 }
 @font-face {
+  font-family: Clash Display SemiBold;
+  src: url("./ClashDisplay_Complete/Fonts/WEB/fonts/ClashDisplay-Semibold.ttf");
+  
+}
+@font-face {
   font-family: Druk Wide Bold; 
   src: url("./Druk_Collection/Druk\ Wide\ Family/DrukWide-Bold-Trial.otf");
 }
