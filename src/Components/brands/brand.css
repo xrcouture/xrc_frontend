@@ -45,17 +45,26 @@ div.marquee>a>img {
 }
 
 .marquee a {
-  display: inline-block;
+  display: inherit;
   white-space: nowrap;
-  /* padding-right: 5.4rem; */
   width: 25rem;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+  align-content: center;
+  border-left: 1px solid white;
+  position: relative;
+  text-align: center;
 }
 
 .marqueelogo {
   min-width: 10%;
   padding: 5%;
-  border-left: 1px solid white;
+  /* border-left: 1px solid white; */
   max-width: 10%;
+  align-self: center;
+  justify-self: center;
+  filter: grayscale(100%);
 }
 
 @keyframes marquee {
