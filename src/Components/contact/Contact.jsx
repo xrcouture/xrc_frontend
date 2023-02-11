@@ -30,17 +30,17 @@ function Contact() {
       <div className='col-sm-6 more-info-container p-4'>
         <h1 className='more-info-title'>For More Information - </h1>
         <div className='more-info-subtitle mt-4'>
-          <p className='more-info-sub'><b>For partnerships : </b> <span style={{fontFamily:"Clash Display Light"}}> &nbsp;partnerships@xrcoture.com</span></p>
-          <p className='more-info-sub'><b>For press enquires : </b><span style={{fontFamily:"Clash Display Light"}}> &nbsp;press@xrcoture.com</span></p>
-          <p className='more-info-sub'><b>For general enquires :</b><span style={{fontFamily:"Clash Display Light"}}> &nbsp;general@xrcoture.com</span></p>
+          <p className='more-info-sub'><b>For Partnerships : </b> <a href='mailto:partnerships@xrcouture.com' className='text-white text-decoration-none'  style={{fontFamily:"Clash Display Light"}}> &nbsp;partnerships@xrcouture.com</a></p>
+          <p className='more-info-sub'><b>For Press Enquires : </b><a href='mailto:press@xrcouture.com' className='text-white text-decoration-none' style={{fontFamily:"Clash Display Light"}}> &nbsp;press@xrcouture.com</a></p>
+          <p className='more-info-sub'><b>For General Enquires :</b><a href='mailto:hello@xrcouture.com' className='text-white text-decoration-none' style={{fontFamily:"Clash Display Light"}}> &nbsp;hello@xrcouture.com</a></p>
         </div>
       </div>
         <div className='col-sm-6 position-relative p-0 d-flex justify-content-center'>
           <div className='contact-form position-relative p-4'>
             <h1 className='contact-title'>Contact Now</h1>
-            <p className='contact-subtitle'>
+            {/* <p className='contact-subtitle'>
             In diam consequat nec eu. Eu sem nec vel, sollicitudin ipsum viverra sed nibh amet. Nunc, et pharetra, duis tortor dictum nisl. Id vestibulum tincidunt adipiscing gravida risus.
-            </p>
+            </p> */}
             
             <div className='form-container'>
             <Formik
@@ -91,13 +91,15 @@ function Contact() {
                         placeholder="Phone"
                       />
                       <p className='error text-danger contact-subtitle'>{errors.phone && touched.phone && errors.phone}</p>
-                      <input
+                      <textarea
                         type="text"
+                        cols={5}
                         name="message"
                         onChange={handleChange}
                         onBlur={handleBlur}
                         value={values.message}
                         placeholder="Message"
+                        style={{height:"100px"}}
                       />
                       <p className='error text-danger contact-subtitle'>{errors.message && touched.message && errors.message}</p>
                       <button type="submit" className='footer-subscribe-button' style={{fontFamily:"Clash Display Light"}} disabled={isSubmitting}>
