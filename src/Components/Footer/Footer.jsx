@@ -212,7 +212,7 @@ const Footer = () => {
             </div>
             <div className='footer-logo-subtitle d-flex flex-column justify-contents-center align-items-center'>
               {/* <div>XR COUTURE 2023</div> */}
-              <div className='mt-2 mb-4'>All Right Reserved&#8482; 2023</div>z
+              <div className='mt-2 mb-4'>All Right Reserved&#8482; 2023</div>
             </div>
         </div>
 
