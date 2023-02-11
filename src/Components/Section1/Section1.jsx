@@ -127,7 +127,7 @@ function Section1() {
                     {/* </AnimatedText> */}
 
                     <FadeIn>
-                        <div className="about-subtitle">XR Couture is a leading digital wearables platform that creates hyper-realistic 3D digital wearables which can be used on avatars across and online games multiple metaverse platforms</div>
+                        <div className="about-subtitle">XR Couture is a leading digital wearables platform which creates hyper-realistic 3D digital wearables which can be worn on avatars across multiple metaverse platforms and online games.</div>
                     </FadeIn>
                     {/* refresh button for mobile */}
 
