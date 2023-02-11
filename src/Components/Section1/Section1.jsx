@@ -3,7 +3,7 @@ import './section1.css'
 import img from '../../assets/about-img.png'
 import { IoMdRefresh } from 'react-icons/io';
 import svg from '../../assets/done.svg'
-import AnimatedText from 'react-animated-text-content';
+// import AnimatedText from 'react-animated-text-content';
 import FadeIn from 'react-fade-in';
 
 import image1 from '../../assets/2.png'
