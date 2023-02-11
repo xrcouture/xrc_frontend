@@ -9,6 +9,8 @@ import FadeIn from 'react-fade-in';
 import image1 from '../../assets/2.png'
 import image2 from '../../assets/3.png'
 import image3 from '../../assets/4.png'
+
+import sandbox from '../../assets/sandbox.png'
 // import vid from '../../assets/high2.mp4'
 
 function Section1() {
@@ -27,9 +29,13 @@ function Section1() {
         document.getElementById("video-class").classList.add("fadeOut")
         document.getElementById("video-class").classList.remove("fadeIn")
 
+        document.getElementById("video-subtitle").classList.add("fadeOut")
+        document.getElementById("video-subtitle").classList.remove("fadeIn")
+
         setTimeout(() => {
             document.getElementsByClassName('overlay')[0].classList.toggle("show")
             document.getElementById("video-class").style.visibility = "hidden"
+            document.getElementById("video-subtitle").style.visibility = "hidden"
 
             setTimeout(() => {
                 setCount((prev) => prev + 1)
@@ -38,9 +44,15 @@ function Section1() {
                 // videoClass.setAttribute("src", )
 
                 videoClass.style.visibility = "visible"
+                document.getElementById("video-subtitle").style.visibility = "visible"
 
                 videoClass.classList.add("fadeIn")
                 videoClass.classList.remove("fadeOut")
+
+                setTimeout(() => {
+                    document.getElementById("video-subtitle").classList.add("fadeIn")
+                    document.getElementById("video-subtitle").classList.remove("fadeOut")
+                }, 200)
 
                 // const video = document.getElementById("video-class")
                 // video.defaultPlaybackRate = 0.5
@@ -71,9 +83,9 @@ function Section1() {
                     </div>
                     {/* <img src={img} alt="" className='about-img' /> */}
                     {/* <video  autoPlay id='video-class' muted src='\src\assets\high2.mp4' style={{width: "90%", marginTop: "-10%", height: "100%"}}></video> */}
-                    {console.log(imgArray[(count%3)-1])}
-                    <img id='video-class' src={imgArray[(count%3)]} style={{width: "90%", marginTop: "-10%", height: "100%"}}/>
-                    <div className='text-white d-flex flex-column video-subtitle' style={{fontFamily: "Clash Display ExtraLight"}}>
+                    <img id='video-class' src={imgArray[(count%3)]} style={{width: "80%", height: "auto"}}/>
+                    {/* <img src={sandbox} /> */}
+                    <div id='video-subtitle' className='text-white d-flex flex-column video-subtitle' style={{fontFamily: "Clash Display Light"}}>
                         <div className='d-flex justify-space-between'>
                             <div>POLYCOUNT:</div>
                             <div> &nbsp; 20000</div>
@@ -119,26 +131,6 @@ function Section1() {
                     > */}
                         <div className='about-title pb-4'>ABOUT</div>
                     {/* </AnimatedText> */}
-
-                    {/* <AnimatedText
-                        type="words" // animate words or chars
-                        animation={{
-                            x: '200px',
-                            y: '-20px',
-                            scale: 1.1,
-                            ease: 'ease-in-out',
-                        }}
-                        animationType="lights"
-                        interval={0.01}
-                        duration={0.5}
-                        tag="p"
-                        className="animated-paragraph about-subtitle"
-                        includeWhiteSpaces
-                        threshold={0.2}
-                        rootMargin="20%"
-                    >
-                        XR Couture is a leading digital wearables platform that creates hyper-realistic 3D digital wearables which can be used on avatars across and online games multiple metaverse platforms
-                    </AnimatedText>; */}
 
                     <FadeIn>
                         <div className="about-subtitle">XR Couture is a leading digital wearables platform that creates hyper-realistic 3D digital wearables which can be used on avatars across and online games multiple metaverse platforms</div>

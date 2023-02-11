@@ -2,6 +2,12 @@ import React from 'react'
 import './section2.css'
 import snap from '../../assets/snap.png'
 import qr from '../../assets/snap-qr.png'
+
+import video1 from '../../assets/CristalTrench.mp4'
+import video2 from '../../assets/8.mp4'
+import video3 from '../../assets/31.mp4'
+import qrnew from '../../assets/snapcode.png'
+
 // import AnimatedText from 'react-animated-text-content';
 function Section2() {
   return (
@@ -27,34 +33,39 @@ function Section2() {
         {/* </AnimatedText> */}
       <h1 className="discover-style">TRY ON AR</h1>
       <div className='row cards-overall-container'>
-        <div className='col-sm-4 d-flex justify-content-center'>
+        <div className='col-sm-4 d-flex justify-content-center mobile-ar-card'>
           <div className='card'>
         <div className='ar-card'>
           <div className='img-container'>
-            <img src={qr} alt="" className="qr" />
-            <img src={snap} alt="" className='snap-img' />
+            {/* <img src={qr} alt="" className="qr" /> */}
+            {/* <img src={snap} alt="" className='snap-img' /> */}
+            <video src={video2} autoPlay loop muted className="snap-img" />
             <h5 className='card-text about-subtitle'>CryptoPunks</h5>
           </div>
         </div>
           </div>
-      </div> 
+      </div>
+
         <div className='col-sm-4 d-flex justify-content-center'>
           <div className='card'>
         <div className='ar-card'>
           <div className='img-container'>
-            <img src={qr} alt="" className="qr" />
-            <img src={snap} alt="" className='snap-img' />
+            <img src={qrnew} alt="" className="qr" />
+            {/* <img src={snap} alt="" className='snap-img' /> */}
+            <video src={video1} autoPlay loop muted className="snap-img" />
             <h5 className='about-subtitle card-text'>CryptoPunks</h5>
           </div>
         </div>
           </div>
       </div>
+
         <div className='col-sm-4 d-flex justify-content-center'>
           <div className='card'>
         <div className='ar-card'>
           <div className='img-container'>
-            <img src={qr} alt="" className="qr" />
-            <img src={snap} alt="" className='snap-img' />
+            {/* <img src={qr} alt="" className="qr" /> */}
+            {/* <img src={snap} alt="" className='snap-img' /> */}
+            <video src={video3} autoPlay loop muted className="snap-img" />
             <h5 className='card-text about-subtitle'>CryptoPunks</h5>
           </div>
         </div>
