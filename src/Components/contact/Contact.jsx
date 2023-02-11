@@ -28,11 +28,11 @@ function Contact() {
         <div className='bg-contact'></div>
       <div className='row contact-row'>
       <div className='col-sm-6 more-info-container p-4'>
-        <h1 className='more-info-title'>For More Information - </h1>
+        <h1 className='more-info-title'>For More Information </h1>
         <div className='more-info-subtitle mt-4'>
-          <p className='more-info-sub'><b>For Partnerships : </b> <a href='mailto:partnerships@xrcouture.com' className='text-white text-decoration-none'  style={{fontFamily:"Clash Display Light"}}> &nbsp;partnerships@xrcouture.com</a></p>
-          <p className='more-info-sub'><b>For Press Enquires : </b><a href='mailto:press@xrcouture.com' className='text-white text-decoration-none' style={{fontFamily:"Clash Display Light"}}> &nbsp;press@xrcouture.com</a></p>
-          <p className='more-info-sub'><b>For General Enquires :</b><a href='mailto:hello@xrcouture.com' className='text-white text-decoration-none' style={{fontFamily:"Clash Display Light"}}> &nbsp;hello@xrcouture.com</a></p>
+          <p className='more-info-sub'><b>Partnerships : </b> <a href='mailto:partnerships@xrcouture.com' className='text-white text-decoration-none'  style={{fontFamily:"Clash Display Light"}}> &nbsp;partnerships@xrcouture.com</a></p>
+          <p className='more-info-sub'><b>Press Enquires : </b><a href='mailto:press@xrcouture.com' className='text-white text-decoration-none' style={{fontFamily:"Clash Display Light"}}> &nbsp;press@xrcouture.com</a></p>
+          <p className='more-info-sub'><b>General Enquires :</b><a href='mailto:hello@xrcouture.com' className='text-white text-decoration-none' style={{fontFamily:"Clash Display Light"}}> &nbsp;hello@xrcouture.com</a></p>
         </div>
       </div>
         <div className='col-sm-6 position-relative p-0 d-flex justify-content-center'>
