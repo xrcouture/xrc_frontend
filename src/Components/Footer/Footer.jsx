@@ -16,7 +16,7 @@ const Footer = () => {
 
         <div className='footer-options-container-one'>
 
-          <AnimatedText
+          {/* <AnimatedText
             type="words" // animate words or chars
             animation={{
               x: '200px',
@@ -28,13 +28,15 @@ const Footer = () => {
             interval={0.05}
             duration={0.5}
             tag="p"
-            className="animated-paragraph footer-options-title pt-5"
+            className="animated-paragraph "
             includeWhiteSpaces
             threshold={0.5}
             rootMargin="20%"
           >
+          </AnimatedText> */}
+          <div className='footer-options-title pt-5'>
             WEAR CLOTHES THAT DON'T EXIST.
-          </AnimatedText>
+          </div>
 
 
           <div className='footer-subscribe-form'>
