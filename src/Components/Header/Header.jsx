@@ -1,68 +1,80 @@
-import React, { useEffect, useState } from 'react'
-import './header.css'
+import React, { useEffect, useState } from "react";
+import "./header.css";
 
-import { Squeeze as Hamburger } from 'hamburger-react'
-import {Link} from 'react-router-dom'
+import { Squeeze as Hamburger } from "hamburger-react";
+import { Link } from "react-router-dom";
 
 const Header = () => {
+  const [size, setSize] = useState("sm");
+  const [screenWidth, setScreenWidth] = useState(window.innerWidth);
 
-  const [size, setSize] = useState("sm")
-  const [screenWidth, setScreenWidth] = useState(window.innerWidth)
-
-  const headerLogo = 'https://xrcouture-xrcie.s3.ap-south-1.amazonaws.com/Metadrip/xrc.png'
+  const headerLogo =
+    "https://xrcouture-xrcie.s3.ap-south-1.amazonaws.com/Metadrip/xrc.png";
 
   const mediaMenuQueries = {
-    small : "26",
-    large : "32",
-  }
+    small: "26",
+    large: "32",
+  };
 
-  const width = window.innerWidth
+  const width = window.innerWidth;
 
   useEffect(() => {
     function handleResize() {
-      setScreenWidth(window.innerWidth)
+      setScreenWidth(window.innerWidth);
     }
 
-    window.addEventListener('resize', handleResize)
-  })
-  
+    window.addEventListener("resize", handleResize);
+  });
+
   useEffect(() => {
     if (width < 576) {
-      setSize("small")
+      setSize("small");
+    } else if (width >= 576) {
+      setSize("large");
     }
-    else if (width >= 576) {
-      setSize("large")
-    }
-  }, [screenWidth])
-  
+  }, [screenWidth]);
 
   return (
-    <div className='header-container'>
-      <Link to={'/'} className='xrc-logo-container'>
-        <img className='xrc-logo' src={headerLogo}></img>
-        <div className='logo-border'></div>
+    <div className="header-container">
+      <Link to={"/"} className="xrc-logo-container">
+        <img className="xrc-logo" src={headerLogo}></img>
+        <div className="logo-border"></div>
       </Link>
 
-      <div className='header-options d-none d-md-flex align-items-center'>
-
+      <div className="header-options d-none d-md-flex align-items-center">
         {/* <div className='header-options-links d-none d-sm-flex'> */}
-          <div className='header-link header-options-item'>Web2 Collection</div>
-          <div className='header-link header-options-item'>Web3 Collection</div>
+        <div className="header-link header-options-item">
+          <a
+            href="https://xrcouture.com/"
+            target="_blank"
+            style={{ color: "white" }}
+          >
+            Web2 Collection
+          </a>
+        </div>
+        <div className="header-link header-options-item">
+          <a
+            href="https://metadrip.xrcouture.com/"
+            target="_blank"
+            style={{ color: "white" }}
+          >
+            Web3 Collection
+          </a>
+        </div>
         {/* </div> */}
 
-        <button className='header-options-button header-options-item'>
-          <Link to={'/contact'} style={{color:"white"}}>Contact Us</Link>
-          
-          </button>
-        
+        <button className="header-options-button header-options-item">
+          <Link to={"/contact"} style={{ color: "white" }}>
+            Contact Us
+          </Link>
+        </button>
       </div>
 
-      <div className='d-md-none'>
-          <Hamburger size={mediaMenuQueries[`${size}`]} color='#ffffff' />
+      <div className="d-md-none">
+        <Hamburger size={mediaMenuQueries[`${size}`]} color="#ffffff" />
       </div>
-
     </div>
-  )
-}
+  );
+};
 
-export default Header
+export default Header;

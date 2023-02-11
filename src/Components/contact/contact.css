@@ -4,7 +4,7 @@
     --font-contact-subtitle:10px;
     --font-contact-subtitle-line:15px;
     --more-info-title:27px;
-    --more-info-subtitle:10px;
+    --more-info-subtitle:13px;
     --more-info-title-line:33px;
     --more-info-subtitle-line:11px;
 }
@@ -21,7 +21,7 @@
     border: 2px solid #6033FF;
     border-radius: 1rem;
 }
-.contact-fom input{
+.contact-fom input,.contact-fom textarea{
     width: 100%;
     background: transparent;
     outline: none;
@@ -34,7 +34,7 @@
     font-size: var(--more-info-subtitle);
     line-height: var(--more-info-subtitle-line);
 }
-.contact-fom input:focus{
+.contact-fom input:focus,.contact-form textarea:focus{
     background-color: transparent;
 }
 .contact-title{
@@ -147,7 +147,7 @@
         font-size: calc(var(--more-info-subtitle)*1.2);
         line-height: calc(var(--more-info-subtitle-line)*1.2);
     }
-    .contact-fom input{
+    .contact-fom input, .contact-fom textarea{
         font-size: calc(var(--more-info-subtitle)*1.2);
         line-height: calc(var(--more-info-subtitle-line)*1.2);
     }
@@ -169,7 +169,7 @@
         font-size: calc(var(--more-info-subtitle)*1.4);
         line-height: calc(var(--more-info-subtitle-line)*1.4);
     }
-    .contact-fom input{
+    .contact-fom input, .contact-fom textarea{
         font-size: calc(var(--more-info-subtitle)*1.4);
         line-height: calc(var(--more-info-subtitle-line)*1.4);
     }
@@ -191,7 +191,7 @@
         font-size: calc(var(--more-info-subtitle)*1.6);
         line-height: calc(var(--more-info-subtitle-line)*1.6);
     }
-    .contact-fom input{
+    .contact-fom input, .contact-fom textarea{
         font-size: calc(var(--more-info-subtitle)*1.6);
         line-height: calc(var(--more-info-subtitle-line)*1.6);
     }
@@ -213,7 +213,7 @@
         font-size: calc(var(--more-info-subtitle)*1.8);
         line-height: calc(var(--more-info-subtitle-line)*1.8);
     }
-    .contact-fom input{
+    .contact-fom input, .contact-fom textarea{
         font-size: calc(var(--more-info-subtitle)*1.8);
         line-height: calc(var(--more-info-subtitle-line)*1.8);
     }
@@ -236,7 +236,7 @@
         font-size: calc(var(--more-info-subtitle)*2);
         line-height: calc(var(--more-info-subtitle-line)*2);
     }
-    .contact-fom input{
+    .contact-fom input, .contact-fom textarea{
         font-size: calc(var(--more-info-subtitle)*2);
         line-height: calc(var(--more-info-subtitle-line)*2);
     }
@@ -258,7 +258,7 @@
         font-size: calc(var(--more-info-subtitle)*2.2);
         line-height: calc(var(--more-info-subtitle-line)*2.2);
     }
-    .contact-fom input{
+    .contact-fom input, .contact-fom textarea{
         font-size: calc(var(--more-info-subtitle)*2.2);
         line-height: calc(var(--more-info-subtitle-line)*2.2);
     }
