@@ -2,11 +2,11 @@ import React from 'react'
 import './section2.css'
 import snap from '../../assets/snap.png'
 import qr from '../../assets/snap-qr.png'
-import AnimatedText from 'react-animated-text-content';
+// import AnimatedText from 'react-animated-text-content';
 function Section2() {
   return (
     <div className='try-on-ar'>
-      <AnimatedText
+      {/* <AnimatedText
         type="chars" // animate words or chars
         animation={{
             x: '200px',
@@ -22,9 +22,9 @@ function Section2() {
         includeWhiteSpaces
         threshold={0.3}
         rootMargin="20%"
-        >
-        TRY ON AR
-        </AnimatedText>
+        > */}
+        <div className='discover-style'>TRY ON AR</div>
+        {/* </AnimatedText> */}
       <h1 className="discover-style">TRY ON AR</h1>
       <div className='row cards-overall-container'>
         <div className='col-sm-4 d-flex justify-content-center'>

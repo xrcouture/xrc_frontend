@@ -3,7 +3,7 @@ import './section1.css'
 import img from '../../assets/about-img.png'
 import { IoMdRefresh } from 'react-icons/io';
 import svg from '../../assets/done.svg'
-import AnimatedText from 'react-animated-text-content';
+// import AnimatedText from 'react-animated-text-content';
 import FadeIn from 'react-fade-in';
 
 import image1 from '../../assets/2.png'
@@ -100,7 +100,7 @@ function Section1() {
 
 
                 <div className='col-sm-6 about-container'>
-                    <AnimatedText
+                    {/* <AnimatedText
                         type="chars" // animate words or chars
                         animation={{
                             x: '200px',
@@ -116,9 +116,9 @@ function Section1() {
                         includeWhiteSpaces
                         threshold={0.5}
                         rootMargin="20%"
-                    >
-                        ABOUT
-                    </AnimatedText>
+                    > */}
+                        <div className='about-title pb-4'>ABOUT</div>
+                    {/* </AnimatedText> */}
 
                     {/* <AnimatedText
                         type="words" // animate words or chars
