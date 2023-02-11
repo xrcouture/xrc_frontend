@@ -5,37 +5,51 @@ import { IoMdRefresh } from 'react-icons/io';
 import svg from '../../assets/done.svg'
 import AnimatedText from 'react-animated-text-content';
 import FadeIn from 'react-fade-in';
+
+import image1 from '../../assets/2.png'
+import image2 from '../../assets/3.png'
+import image3 from '../../assets/4.png'
 // import vid from '../../assets/high2.mp4'
 
 function Section1() {
+
+    const imgArray = [image1, image2, image3]
+
+    const [count, setCount] = useState(0)
     // const text = document.querySelector(".text p")
     //  text.innerHTML = text.innerHTML.split("").map((char,i)=>`<span style="transform:rotate(${i*5}deg)">${char}</span>`).join("")
     const text = "Cross Metaverse wearables"
     // const [animating, setAnimating] = useState(false)
 
+
     const changeIMG = () => {
-        console.log("first")
-        // setAnimating((prev)=>!prev)
-        console.log("called")
         document.getElementsByClassName('overlay')[0].classList.toggle("show")
         document.getElementById("video-class").classList.add("fadeOut")
         document.getElementById("video-class").classList.remove("fadeIn")
 
         setTimeout(() => {
             document.getElementsByClassName('overlay')[0].classList.toggle("show")
-
             document.getElementById("video-class").style.visibility = "hidden"
+
             setTimeout(() => {
-                document.getElementById("video-class").style.visibility = "visible"
-                document.getElementById("video-class").classList.add("fadeIn")
-                document.getElementById("video-class").classList.remove("fadeOut")
-                const video = document.getElementById("video-class")
-                video.defaultPlaybackRate = 0.5
-                video.load()
-                video.play()
+                setCount((prev) => prev + 1)
+                let videoClass =  document.getElementById("video-class")
+
+                // videoClass.setAttribute("src", )
+
+                videoClass.style.visibility = "visible"
+
+                videoClass.classList.add("fadeIn")
+                videoClass.classList.remove("fadeOut")
+
+                // const video = document.getElementById("video-class")
+                // video.defaultPlaybackRate = 0.5
+                // video.load()
+                // video.play()
             }, 500);
-            // setAnimating((prev)=>!prev)
+
         }, 1000);
+
     }
 
     return (
@@ -56,13 +70,28 @@ function Section1() {
                         <div class="bar"></div>
                     </div>
                     {/* <img src={img} alt="" className='about-img' /> */}
-                    <video  autoPlay id='video-class' muted src='\src\assets\high2.mp4' style={{width: "90%", marginTop: "-10%", height: "100%"}}></video>
+                    {/* <video  autoPlay id='video-class' muted src='\src\assets\high2.mp4' style={{width: "90%", marginTop: "-10%", height: "100%"}}></video> */}
+                    {console.log(imgArray[(count%3)-1])}
+                    <img id='video-class' src={imgArray[(count%3)]} style={{width: "90%", marginTop: "-10%", height: "100%"}}/>
+                    <div className='text-white d-flex flex-column video-subtitle' style={{fontFamily: "Clash Display ExtraLight"}}>
+                        <div className='d-flex justify-space-between'>
+                            <div>POLYCOUNT:</div>
+                            <div> &nbsp; 20000</div>
+                        </div>
+                        <div className='d-flex justify-space-between'>
+                            <div>TEXTURE SIZE:</div>
+                            <div> 5000</div>
+                        </div>
+                    </div>
                 </div>
 
                 {/* refresh button for desktop */}
                 <div onClick={changeIMG} style={{cursor: "pointer", zIndex: "10000000"}} className='refresh-btn-des d-none d-sm-flex'>
                     <div className='icon'>
-                        <IoMdRefresh size={45} color="white" style={{ color: "white", fontSize: "100px" }} />
+                        <IoMdRefresh className='d-md-none' size={35} color="white" style={{ color: "white", fontSize: "100px" }} />
+                        <IoMdRefresh className='d-none d-md-block d-lg-none' size={40} color="white" style={{ color: "white", fontSize: "100px" }} />
+                        <IoMdRefresh className='d-none d-lg-block d-xl-none' size={45} color="white" style={{ color: "white", fontSize: "100px" }} />
+                        <IoMdRefresh className='d-none d-xl-block' size={50} color="white" style={{ color: "white", fontSize: "100px" }} />
                     </div>
                     <div className='text'>
                         <img src={svg} alt="" />
@@ -118,7 +147,7 @@ function Section1() {
 
                     <div onClick={changeIMG} className='refresh-btn-mob d-sm-none'>
                         <div className='icon'>
-                            <IoMdRefresh size={50} color="white" style={{ color: "white", fontSize: "100px" }} />
+                            <IoMdRefresh size={30} color="white" style={{ color: "white", fontSize: "100px" }} />
                         </div>
                         <div className='text'>
                             <img src={svg} alt="" />

@@ -34,6 +34,11 @@ const Header = () => {
       setSize("large")
     }
   }, [screenWidth])
+
+  const showMobileMenu = () => {
+    var header = document.querySelector('.demo');
+    header.classList.toggle('menu-opened');
+  }
   
 
   return (
@@ -45,10 +50,8 @@ const Header = () => {
 
       <div className='header-options d-none d-md-flex align-items-center'>
 
-        {/* <div className='header-options-links d-none d-sm-flex'> */}
-          <div className='header-link header-options-item'>Web2 Collection</div>
-          <div className='header-link header-options-item'>Web3 Collection</div>
-        {/* </div> */}
+        <div className='header-link header-options-item'>Web2 Collection</div>
+        <div className='header-link header-options-item'>Web3 Collection</div>
 
         <button className='header-options-button header-options-item'>
           <Link to={'/contact'} style={{color:"white"}}>Contact Us</Link>
@@ -57,9 +60,19 @@ const Header = () => {
         
       </div>
 
-      <div className='d-md-none'>
+      <div className='d-md-none' onClick={showMobileMenu} style={{zIndex: "100"}}>
           <Hamburger size={mediaMenuQueries[`${size}`]} color='#ffffff' />
       </div>
+
+        <div class="demo d-md-none" style={{position: "absolute", width: "100%", top: "5rem", backgroundColor: "#000", height: "auto", visibility: "hidden", left: "0"}}>
+          <ul class="menu">
+            <li class="menu-item"><a href="#">Web2 Collection</a></li>
+            <li class="menu-item"><a href="#">Web3 Collection</a></li>
+            <li class="menu-item">
+              <Link to={'/contact'} style={{color:"white"}}>Contact Us</Link>
+            </li>
+          </ul>
+        </div>
 
     </div>
   )
