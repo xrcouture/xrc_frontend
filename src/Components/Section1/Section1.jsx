@@ -105,7 +105,7 @@ function Section1() {
 
 
                 <div className='col-sm-6 about-container'>
-                    <AnimatedText
+                    {/* <AnimatedText
                         type="chars" // animate words or chars
                         animation={{
                             x: '200px',
@@ -121,10 +121,10 @@ function Section1() {
                         includeWhiteSpaces
                         threshold={0.5}
                         rootMargin="20%"
-                    >
-                        {/* <div className='about-title pb-4'>ABOUT</div> */}
-                        ABOUT
-                    </AnimatedText>
+                    > */}
+                        <div className='about-title pb-4'>ABOUT</div>
+                        {/* ABOUT */}
+                    {/* </AnimatedText> */}
 
                     <FadeIn>
                         <div className="about-subtitle">XR Couture is a leading digital wearables platform that creates hyper-realistic 3D digital wearables which can be used on avatars across and online games multiple metaverse platforms</div>
