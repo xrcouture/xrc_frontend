@@ -3,26 +3,19 @@ import './section1.css'
 import img from '../../assets/about-img.png'
 import { IoMdRefresh } from 'react-icons/io';
 import svg from '../../assets/done.svg'
-// import AnimatedText from 'react-animated-text-content';
+import AnimatedText from 'react-animated-text-content';
 import FadeIn from 'react-fade-in';
 
 import image1 from '../../assets/2.png'
 import image2 from '../../assets/3.png'
 import image3 from '../../assets/4.png'
 
-import sandbox from '../../assets/sandbox.png'
-// import vid from '../../assets/high2.mp4'
-
 function Section1() {
 
     const imgArray = [image1, image2, image3]
 
     const [count, setCount] = useState(0)
-    // const text = document.querySelector(".text p")
-    //  text.innerHTML = text.innerHTML.split("").map((char,i)=>`<span style="transform:rotate(${i*5}deg)">${char}</span>`).join("")
     const text = "Cross Metaverse wearables"
-    // const [animating, setAnimating] = useState(false)
-
 
     const changeIMG = () => {
         document.getElementsByClassName('overlay')[0].classList.toggle("show")
@@ -112,7 +105,7 @@ function Section1() {
 
 
                 <div className='col-sm-6 about-container'>
-                    {/* <AnimatedText
+                    <AnimatedText
                         type="chars" // animate words or chars
                         animation={{
                             x: '200px',
@@ -128,9 +121,10 @@ function Section1() {
                         includeWhiteSpaces
                         threshold={0.5}
                         rootMargin="20%"
-                    > */}
-                        <div className='about-title pb-4'>ABOUT</div>
-                    {/* </AnimatedText> */}
+                    >
+                        {/* <div className='about-title pb-4'>ABOUT</div> */}
+                        ABOUT
+                    </AnimatedText>
 
                     <FadeIn>
                         <div className="about-subtitle">XR Couture is a leading digital wearables platform that creates hyper-realistic 3D digital wearables which can be used on avatars across and online games multiple metaverse platforms</div>
