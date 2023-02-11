@@ -28,13 +28,17 @@
 }
 .ar-card{
     width: 100%;
-    /* height: 50%; */
+    height: 100%;
     background: #000000;
     border-radius: 2vw;
     padding: 20px;
     display: flex;
     justify-content: end;
 
+}
+
+.mobile-ar-card {
+    order: 1;
 }
 .snap-img{
     width: 100%;
@@ -47,7 +51,7 @@
     transform:translate(-55%,-100%) rotate(270deg);
     color: white;
     left: 0;
-    display: none;
+    /* display: none; */
 
 }
 .card{
@@ -88,4 +92,10 @@
     display: flex;
     width: 80%;
     justify-content: end;
+}
+
+@media (min-width: 576px) {
+    .mobile-ar-card {
+        order: 0;
+    }
 }

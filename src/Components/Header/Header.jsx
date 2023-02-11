@@ -32,7 +32,16 @@ const Header = () => {
     } else if (width >= 576) {
       setSize("large");
     }
-  }, [screenWidth]);
+    else if (width >= 576) {
+      setSize("large")
+    }
+  }, [screenWidth])
+
+  const showMobileMenu = () => {
+    var header = document.querySelector('.demo');
+    header.classList.toggle('menu-opened');
+  }
+  
 
   return (
     <div className="header-container">
@@ -70,9 +79,36 @@ const Header = () => {
         </button>
       </div>
 
-      <div className="d-md-none">
-        <Hamburger size={mediaMenuQueries[`${size}`]} color="#ffffff" />
+      <div className='d-md-none' onClick={showMobileMenu} style={{zIndex: "100"}}>
+          <Hamburger size={mediaMenuQueries[`${size}`]} color='#ffffff' />
       </div>
+
+        <div class="demo d-md-none" style={{position: "absolute", width: "100%", top: "5rem", backgroundColor: "#000", height: "auto", visibility: "hidden", left: "0"}}>
+          <ul class="menu">
+            <li class="menu-item">
+            <a
+            href="https://xrcouture.com/"
+            target="_blank"
+            style={{ color: "white" }}
+          >
+            Web2 Collection
+          </a>
+              </li>
+            <li class="menu-item">
+            <a
+            href="https://metadrip.xrcouture.com/"
+            target="_blank"
+            style={{ color: "white" }}
+          >
+            Web3 Collection
+          </a>
+              </li>
+            <li class="menu-item">
+              <Link to={'/contact'} style={{color:"white"}}>Contact Us</Link>
+            </li>
+          </ul>
+        </div>
+
     </div>
   );
 };
