@@ -1,24 +1,33 @@
 import React, { useState } from 'react'
 import './section1.css'
-import img from '../../assets/about-img.png'
 import { IoMdRefresh } from 'react-icons/io';
 import svg from '../../assets/done.svg'
-// import AnimatedText from 'react-animated-text-content';
 import FadeIn from 'react-fade-in';
 
 import image1 from '../../assets/2.png'
 import image2 from '../../assets/3.png'
 import image3 from '../../assets/4.png'
 
+import { SANDBOX } from '../../Models/SANDBOX'
+import { DCL } from '../../Models/DCL'
+import { OG } from '../../Models/OG'
+import { ROBLOX } from '../../Models/ROBLOX'
+
+import ModelComponent from './ModelComponent';
+
 function Section1() {
 
-    const imgArray = [image1, image2, image3]
-
+    // const [currModel, setCurrModel] = useState(<ROBLOX />)
     const [count, setCount] = useState(0)
-    const text = "Cross Metaverse wearables"
+    const modelArray = [<DCL />, <SANDBOX />, <OG />, <ROBLOX />]
+
+    // const imgArray = [image1, image2, image3]
+
+    // const text = "Cross Metaverse wearables"
 
     const changeIMG = () => {
         document.getElementsByClassName('overlay')[0].classList.toggle("show")
+
         document.getElementById("video-class").classList.add("fadeOut")
         document.getElementById("video-class").classList.remove("fadeIn")
 
@@ -31,10 +40,10 @@ function Section1() {
             document.getElementById("video-subtitle").style.visibility = "hidden"
 
             setTimeout(() => {
-                setCount((prev) => prev + 1)
-                let videoClass =  document.getElementById("video-class")
+                // setCount((prev) => prev + 1)
+                let videoClass = document.getElementById("video-class")
 
-                // videoClass.setAttribute("src", )
+                setCount((prev) => prev+1)
 
                 videoClass.style.visibility = "visible"
                 document.getElementById("video-subtitle").style.visibility = "visible"
@@ -47,21 +56,20 @@ function Section1() {
                     document.getElementById("video-subtitle").classList.remove("fadeOut")
                 }, 200)
 
-                // const video = document.getElementById("video-class")
-                // video.defaultPlaybackRate = 0.5
-                // video.load()
-                // video.play()
             }, 500);
 
         }, 1000);
 
     }
 
+
     return (
         <div className='about'>
-            <div className='row about-section-container' style={{height: "100%"}}>
-            
-            <div className='col-sm-6 about-img-container d-flex justify-content-center align-items-center' style={{height: "100%", position: "relative", overflow: "hidden"}}>
+            <div className='row about-section-container' style={{ height: "100%" }}>
+
+                <div className='col-sm-6 about-img-container d-flex justify-content-center align-items-center' style={{ height: "100%", position: "relative", overflow: "hidden" }}>
+                    
+                    {/* animation */}
                     <div class="overlay">
                         <div class="bar"></div>
                         <div class="bar"></div>
@@ -74,11 +82,12 @@ function Section1() {
                         <div class="bar"></div>
                         <div class="bar"></div>
                     </div>
-                    {/* <img src={img} alt="" className='about-img' /> */}
-                    {/* <video  autoPlay id='video-class' muted src='\src\assets\high2.mp4' style={{width: "90%", marginTop: "-10%", height: "100%"}}></video> */}
-                    <img id='video-class' src={imgArray[(count%3)]} style={{width: "80%", height: "auto"}}/>
-                    {/* <img src={sandbox} /> */}
-                    <div id='video-subtitle' className='text-white d-flex flex-column video-subtitle' style={{fontFamily: "Clash Display Light"}}>
+
+                    {/* <img id='video-class' src={imgArray[(count % 3)]} style={{ width: "80%", height: "auto" }} /> */}
+                    <ModelComponent model={modelArray[count%4]} position={[-200, 0, 0]} />
+                    
+                    {/* model info */}
+                    <div id='video-subtitle' className='text-white d-flex flex-column video-subtitle' style={{ fontFamily: "Clash Display Light" }}>
                         <div className='d-flex justify-space-between'>
                             <div>POLYCOUNT:</div>
                             <div> &nbsp; 20000</div>
@@ -88,10 +97,11 @@ function Section1() {
                             <div> 5000</div>
                         </div>
                     </div>
+                
                 </div>
 
                 {/* refresh button for desktop */}
-                <div onClick={changeIMG} style={{cursor: "pointer", zIndex: "10000000"}} className='refresh-btn-des d-none d-sm-flex'>
+                <div onClick={changeIMG} style={{ cursor: "pointer", zIndex: "10000000" }} className='refresh-btn-des d-none d-sm-flex'>
                     <div className='icon'>
                         <IoMdRefresh className='d-md-none' size={35} color="white" style={{ color: "white", fontSize: "100px" }} />
                         <IoMdRefresh className='d-none d-md-block d-lg-none' size={40} color="white" style={{ color: "white", fontSize: "100px" }} />
@@ -122,8 +132,8 @@ function Section1() {
                         threshold={0.5}
                         rootMargin="20%"
                     > */}
-                        <div className='about-title pb-4'>ABOUT</div>
-                        {/* ABOUT */}
+                    <div className='about-title pb-4'>ABOUT</div>
+                    {/* ABOUT */}
                     {/* </AnimatedText> */}
 
                     <FadeIn>

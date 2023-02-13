@@ -22,7 +22,12 @@
     "react-router-dom": "^6.8.1",
     "reactstrap": "^9.1.5",
     "sort-by": "^1.2.0",
-    "yup": "^1.0.0"
+    "yup": "^1.0.0",
+    "@react-three/drei": "9.48.0",
+    "@react-three/fiber": "8.9.1",
+    "@types/three": "0.146.0",
+    "leva": "0.9.34",
+    "three": "0.148.0"
   },
   "devDependencies": {
     "@types/react": "^18.0.27",
