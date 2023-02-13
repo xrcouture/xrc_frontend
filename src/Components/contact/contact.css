@@ -20,6 +20,7 @@
     background-color: black;
     border: 2px solid #6033FF;
     border-radius: 1rem;
+    width: 100%;
 }
 .contact-fom input,.contact-fom textarea{
     width: 100%;
@@ -38,7 +39,7 @@
     background-color: transparent;
 }
 .contact-title{
-    font-family: 'Clash Display Bold';
+    font-family: 'Clash Display SemiBold';
     text-transform: uppercase;
     font-size: var(--font-contact-title);
     text-align: left;

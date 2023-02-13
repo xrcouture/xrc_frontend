@@ -15,29 +15,32 @@ function Contact() {
       .max(50, "Too Long!")
       .required("Name is required"),
   
-    phone: Yup.string()
-    .required("Phone number is required")
-    .matches(phoneRegExp, 'Phone number is not valid')
-    .min(10, "Phone Number should be 10digit")
-    .max(10, "Phone Number should be 10digit"),
+    // phone: Yup.string()
+    // .required("Phone number is required")
+    // .matches(phoneRegExp, 'Phone number is not valid')
+    // .min(10, "Phone Number should be 10digit")
+    // .max(10, "Phone Number should be 10digit"),
     email: Yup.string().email().required("Email is required"),
     message: Yup.string()
+    .min(1)
+    .max(500, "Too Long!")
+    .required("Message is required")
   });
   return (
     <div className='contact'>
         <div className='bg-contact'></div>
       <div className='row contact-row'>
       <div className='col-sm-6 more-info-container p-4'>
-        <h1 className='more-info-title'>For More Information - </h1>
+        <h1 className='more-info-title'>For More Information </h1>
         <div className='more-info-subtitle mt-4'>
-          <p className='more-info-sub'><b>For Partnerships : </b> <a href='mailto:partnerships@xrcouture.com' className='text-white text-decoration-none'  style={{fontFamily:"Clash Display Light"}}> &nbsp;partnerships@xrcouture.com</a></p>
-          <p className='more-info-sub'><b>For Press Enquires : </b><a href='mailto:press@xrcouture.com' className='text-white text-decoration-none' style={{fontFamily:"Clash Display Light"}}> &nbsp;press@xrcouture.com</a></p>
-          <p className='more-info-sub'><b>For General Enquires :</b><a href='mailto:hello@xrcouture.com' className='text-white text-decoration-none' style={{fontFamily:"Clash Display Light"}}> &nbsp;hello@xrcouture.com</a></p>
+          <p className='more-info-sub'><b>Partnerships : </b> <a href='mailto:partnerships@xrcouture.com' className='text-white text-decoration-none'  style={{fontFamily:"Clash Display Light"}}> &nbsp;partnerships@xrcouture.com</a></p>
+          <p className='more-info-sub'><b>Press Enquires : </b><a href='mailto:press@xrcouture.com' className='text-white text-decoration-none' style={{fontFamily:"Clash Display Light"}}> &nbsp;press@xrcouture.com</a></p>
+          <p className='more-info-sub'><b>General Enquires :</b><a href='mailto:hello@xrcouture.com' className='text-white text-decoration-none' style={{fontFamily:"Clash Display Light"}}> &nbsp;hello@xrcouture.com</a></p>
         </div>
       </div>
         <div className='col-sm-6 position-relative p-0 d-flex justify-content-center'>
-          <div className='contact-form position-relative p-4'>
-            <h1 className='contact-title'>Contact Now</h1>
+          <div className='contact-form position-relative p-5'>
+            <h1 className='contact-title'>GET IN TOUCH</h1>
             {/* <p className='contact-subtitle'>
             In diam consequat nec eu. Eu sem nec vel, sollicitudin ipsum viverra sed nibh amet. Nunc, et pharetra, duis tortor dictum nisl. Id vestibulum tincidunt adipiscing gravida risus.
             </p> */}
@@ -48,7 +51,7 @@ function Contact() {
                   validationSchema={SignUpSchema}
                   onSubmit={(values, { setSubmitting }) => {
                     setTimeout(() => {
-                      alert(JSON.stringify(values, null, 2));
+                      // alert(JSON.stringify(values, null, 2));
                       setSubmitting(false);
                     }, 400);
                   }}
@@ -70,7 +73,7 @@ function Contact() {
                         onChange={handleChange}
                         onBlur={handleBlur}
                         value={values.name}
-                        placeholder="Name"
+                        placeholder="Name*"
                       />
                       <p className='error text-danger contact-subtitle'>{errors.name && touched.name && errors.name}</p>
                       <input
@@ -79,7 +82,7 @@ function Contact() {
                         onChange={handleChange}
                         onBlur={handleBlur}
                         value={values.email}
-                        placeholder="Email"
+                        placeholder="Email*"
                       />
                       <p className='error text-danger contact-subtitle'>{errors.email && touched.email && errors.email}</p>
                       <input
@@ -98,11 +101,11 @@ function Contact() {
                         onChange={handleChange}
                         onBlur={handleBlur}
                         value={values.message}
-                        placeholder="Message"
+                        placeholder="Message*"
                         style={{height:"100px"}}
                       />
                       <p className='error text-danger contact-subtitle'>{errors.message && touched.message && errors.message}</p>
-                      <button type="submit" className='footer-subscribe-button' style={{fontFamily:"Clash Display Light"}} disabled={isSubmitting}>
+                      <button type="submit" className='footer-subscribe-button' disabled={isSubmitting}>
                         Submit Form
                       </button>
                     </form>
