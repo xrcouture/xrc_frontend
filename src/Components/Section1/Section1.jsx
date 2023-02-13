@@ -8,9 +8,6 @@ import { ModelData } from '../../Models/ModelData'
 
 import ModelComponent from './ModelComponent'
 
-import AnimatedText from 'react-animated-text-content';
-
-
 function Section1() {
 
     const [count, setCount] = useState(0)
@@ -131,7 +128,7 @@ function Section1() {
 
                 {/* TEXT */}
                 <div className='col-sm-6 about-container'>
-                    <AnimatedText
+                    {/* <AnimatedText
                         type="chars" // animate words or chars
                         animation={{
                             x: '200px',
@@ -147,10 +144,10 @@ function Section1() {
                         includeWhiteSpaces
                         threshold={0.5}
                         rootMargin="20%"
-                    >
-                    {/* <div className='about-title pb-4'>ABOUT</div> */}
-                    ABOUT
-                    </AnimatedText>
+                    > */}
+                    <div className='about-title pb-4'>ABOUT</div>
+                    {/* ABOUT */}
+                    {/* </AnimatedText> */}
 
                     <FadeIn>
                         <div className="about-subtitle">XR Couture is a leading digital wearables platform which creates hyper-realistic 3D digital wearables which can be worn on avatars across multiple metaverse platforms and online games.</div>
