@@ -20,6 +20,7 @@
   padding-bottom: 1.5rem;
   border-bottom: 2px solid #422BFF;
   width: 100%;
+
 }
 
 .footer-subscribe-text {
@@ -36,15 +37,39 @@
   color: #fff;
   opacity: 1;
 }
+.icons{
+  /* height: 40px; */
+  background-color: white;
+  /* width: 40px; */
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: .8rem;
+  font-size: 1.5rem;
+  padding: .5rem;
+  height: 3rem;
+  width: 3rem;
+}
+.icons:hover{
+  background-color: black;
+  border: 1px solid white;
+}
+.icons:hover svg{
+  color: white !important;
+}
+
 
 .footer-subscribe-button {
   font-family: "Clash Display Bold";
   background: linear-gradient(180deg, #432BFF 0%, #6534FF 100%);
   font-size: 0.95rem;
   padding: 0.8rem 1rem;
+  color: white !important;
 }
 
 .footer-logo-container {
+  height: 90% !important;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -64,12 +89,15 @@
   font-family: "Clash Display Medium";
 }
 
+
 .social-icons {
   color: black;
   background-color: #fff;
   margin: 0rem 0.5rem;
-  padding: 0.35rem;
-  font-size: 1.5rem;
+  padding: 0.3rem;
+  display: block;
+  width: 2.5rem;
+  height: auto;
   border-radius: 100%;
 }
 
@@ -80,7 +108,12 @@ textarea:focus, input:focus{
 .footer-links > div, .social-icons {
   cursor: pointer;
 }
-
+@media (max-width: 400px) {
+  .icons{
+    margin:.5rem
+  }
+  
+}
 @media (min-width: 425px) {
   .footer-options-title {
     font-size: 2.3rem;
@@ -113,6 +146,8 @@ textarea:focus, input:focus{
     margin: 0rem 0.8rem;
     padding: 0.5rem;
     font-size: 2rem;
+    width: 3rem;
+    height: auto;
   }
   .footer-links {
     font-size: 1.1rem;
@@ -143,6 +178,8 @@ textarea:focus, input:focus{
     margin: 0rem 1.2rem 0rem 0rem;
     padding: 0.4rem;
     font-size: 1.4rem;
+    width: 2.4rem;
+    height: auto;
   }
   .footer-links > div {
     font-size: 0.855rem;
@@ -171,7 +208,9 @@ textarea:focus, input:focus{
   .social-icons {
     margin: 0rem 1.5rem 0rem 0rem;
     padding: 0.5rem;
-    font-size: 1.5rem;
+    font-size: 2.5rem;
+    width: 1.5rem;
+    height: auto;
   }
   .footer-links > div {
     font-size: 0.95rem;
@@ -201,6 +240,8 @@ textarea:focus, input:focus{
     margin: 0rem 1.6rem 0rem 0rem;
     padding: 0.6rem;
     font-size: 1.5rem;
+    width: 2.5rem;
+    height: auto;
   }
   .footer-links > div {
     font-size: 1.05rem;
@@ -230,6 +271,8 @@ textarea:focus, input:focus{
     margin: 0rem 2.2rem 0rem 0rem;
     padding: 0.6rem;
     font-size: 1.6rem;
+    width: 2.6rem;
+    height: auto;
   }
   .footer-links > div {
     font-size: 1.1rem;
@@ -258,6 +301,8 @@ textarea:focus, input:focus{
     margin: 0rem 2rem 0rem 0rem;
     padding: 0.6rem;
     font-size: 1.7rem;
+    width: 2.7rem;
+    height: auto;
   }
   .footer-links > div {
     font-size: 1.15rem;
@@ -286,6 +331,8 @@ textarea:focus, input:focus{
     margin: 0rem 2rem 0rem 0rem;
     padding: 0.7rem;
     font-size: 2rem;
+    width: 3rem;
+    height: auto;
   }
   .footer-links > div {
     font-size: 1.255rem;

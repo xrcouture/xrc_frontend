@@ -85,7 +85,7 @@
 .refresh-btn-des {
     width: var(--refresh-btn);
     height: var(--refresh-btn);
-    background: #454545;
+    background: linear-gradient(180deg, #432BFF 0%, #6534FF 100%);
     border-radius: 50%;
     position: absolute;
     left: 50%;

@@ -15,8 +15,15 @@
 }
 
 </style>
+
+<linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#6534FF;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#432BFF;stop-opacity:1" />
+    </linearGradient>
+
+
 </defs>
-<circle cx="100" cy="100" r="100" fill="#454545" id="background" />
+<circle cx="100" cy="100" r="100" fill="url(#grad1)" id="background" />
 <!-- <circle fill="none" stroke="#FFF" cx="100" cy="100" r="93.8" stroke-width="3" id="rim" /> -->
 <text>
     <textPath xlink:href="#starbuckscircle">CROSS-PLATFORM WEARABLES</textPath>

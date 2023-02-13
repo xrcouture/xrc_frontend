@@ -29,10 +29,12 @@ function Section2() {
         threshold={0.3}
         rootMargin="20%"
         > */}
-        <div className='discover-style'>TRY ON AR</div>
+        {/* <div className='discover-style text-center'>TRY  ON AR</div> */}
         {/* </AnimatedText> */}
-      <h1 className="discover-style">TRY ON AR</h1>
-      <div className='row cards-overall-container'>
+        <div className='w-100 d-flex justify-content-center'>
+            <h1 className="discover-style">TRY ON AR</h1>
+        </div>
+      <div className='row cards-overall-container mt-5'>
         <div className='col-sm-4 d-flex justify-content-center mobile-ar-card'>
           <div className='card'>
         <div className='ar-card'>

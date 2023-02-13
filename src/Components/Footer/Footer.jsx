@@ -1,6 +1,8 @@
 import React from 'react'
 import './footer.css'
 // import AnimatedText from 'react-animated-text-content';
+import { AiFillInstagram } from 'react-icons/ai';
+import { FaDiscord,FaFacebookF,FaTwitter,FaLinkedinIn } from 'react-icons/fa';
 
 const Footer = () => {
 
@@ -51,11 +53,21 @@ const Footer = () => {
 
         <div className='footer-options-container-two d-none d-md-block'>
           <div className='d-flex mt-4'>
-            <i className="social-icons lab la-facebook-f"></i>
-            <i className="social-icons lab la-instagram"></i>
-            <i className="social-icons lab la-twitter"></i>
-            <i className="social-icons lab la-linkedin-in"></i>
-            <i className="social-icons lab la-discord"></i>
+            <a href='' className='icons'>
+              <FaFacebookF  color='black' />
+            </a>
+            <a href='' className='icons'>
+            <AiFillInstagram  color='black' />
+            </a>
+            <a href='' className='icons'>
+              <FaTwitter  color='black' />
+            </a>
+            <a href='' className='icons'>
+              <FaLinkedinIn  color='black' />
+            </a>
+            <a href='' className='icons'>
+              <FaDiscord  color='black' />
+            </a>
           </div>
 
           <div className='footer-links d-flex mt-5'>
@@ -80,11 +92,13 @@ const Footer = () => {
 
       </div>
 
-      <div className='footer-logo-container col-md-4 mt-5 mt-md-0'>
+      <div className=' col-md-4 mt-5 mt-md-0'>
+        <div className='footer-logo-container h-100'>
         <img className='footer-logo mt-3 mt-md-0' src={footerLogo} alt=""></img>
-        <div className='footer-logo-subtitle d-flex flex-column justify-contents-center align-items-center'>
+        </div>
+        <div className='footer-logo-subtitle text-center'>
           {/* <div>XR COUTURE 2023</div> */}
-          <div className='mt-2'>All Right Reserved&#8482; 2023</div>
+          <div className='mb-2'>All Right Reserved&#8482; 2023</div>
         </div>
       </div>
 
@@ -159,11 +173,21 @@ const Footer = () => {
 
         <div className='footer-options-container-two d-none d-md-block'>
           <div className='d-flex mt-4'>
-            <i className="social-icons lab la-facebook-f"></i>
-            <i className="social-icons lab la-instagram"></i>
-            <i className="social-icons lab la-twitter"></i>
-            <i className="social-icons lab la-linkedin-in"></i>
-            <i className="social-icons lab la-discord"></i>
+          <a href='' className='icons'>
+              <FaFacebookF color='black' />
+            </a>
+            <a href='' className="icons">
+            <AiFillInstagram color='black' />
+            </a>
+            <a href='' className='icons'>
+              <FaTwitter color='black' />
+            </a>
+            <a href='' className='icons'>
+              <FaLinkedinIn color="black" />
+            </a>
+            <a href='' className='icons'>
+              <FaDiscord color='black' />
+            </a>
           </div>
 
           <div className='footer-links d-flex mt-5'>
@@ -176,11 +200,21 @@ const Footer = () => {
 
       </div>
       <div className='d-flex justify-content-start mt-5'>
-                  <i className="social-icons lab la-facebook-f"></i>
-                  <i className="social-icons lab la-instagram"></i>
-                  <i className="social-icons lab la-twitter"></i>
-                  <i className="social-icons lab la-linkedin-in"></i>
-                  <i className="social-icons lab la-discord"></i>
+      <a href='' className='icons'>
+              <FaFacebookF color='black' />
+            </a>
+            <a href='' className="icons">
+            <AiFillInstagram color='black' />
+            </a>
+            <a href='' className='icons'>
+              <FaTwitter color='black' />
+            </a>
+            <a href='' className='icons'>
+              <FaLinkedinIn color="black" />
+            </a>
+            <a href='' className='icons'>
+              <FaDiscord color='black' />
+            </a>
                 </div>
 
       <div className='footer-logo-container col-md-4 mt-5 mt-md-0'>
