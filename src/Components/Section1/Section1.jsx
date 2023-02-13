@@ -1,65 +1,82 @@
-import React, { useState } from 'react'
-import './section1.css'
+import React, { useState, useEffect } from 'react'
 import { IoMdRefresh } from 'react-icons/io';
 import svg from '../../assets/done.svg'
 import FadeIn from 'react-fade-in';
+import './section1.css'
 
-import image1 from '../../assets/2.png'
-import image2 from '../../assets/3.png'
-import image3 from '../../assets/4.png'
+import { ModelData } from '../../Models/ModelData'
 
-import { SANDBOX } from '../../Models/SANDBOX'
-import { DCL } from '../../Models/DCL'
-import { OG } from '../../Models/OG'
-import { ROBLOX } from '../../Models/ROBLOX'
-import { VibranceSplash } from '../../Models/VibranceSplash'
+import ModelComponent from './ModelComponent'
 
-import ModelComponent from './ModelComponent';
 
 function Section1() {
 
-    // const [currModel, setCurrModel] = useState(<ROBLOX />)
     const [count, setCount] = useState(0)
-    const modelArray = [<VibranceSplash />, <DCL />, <SANDBOX />, <OG />, <ROBLOX />]
+    const modelArray = ["Clo3d", "Roblox" , "Decentraland" , "Sandbox" ]
+    const [item, setItem] = useState(ModelData[modelArray[count]])
 
-    // const imgArray = [image1, image2, image3]
 
-    // const text = "Cross Metaverse wearables"
+    useEffect(() => {
+        setItem(ModelData[modelArray[count]])
+    }, [count])
+    
+
 
     const changeIMG = () => {
+
+        setCount((prev) => ((prev+1)%4))
+
         document.getElementsByClassName('overlay')[0].classList.toggle("show")
 
-        document.getElementById("video-class").classList.add("fadeOut")
-        document.getElementById("video-class").classList.remove("fadeIn")
+        // document.getElementById("video-class").classList.add("fadeOut")
+        // document.getElementById("video-class").classList.remove("fadeIn")
 
         document.getElementById("video-subtitle").classList.add("fadeOut")
         document.getElementById("video-subtitle").classList.remove("fadeIn")
+        document.getElementById("video-subtitle").style.visibility = "hidden"
+
+
+        document.getElementById("model-bg").classList.add("fadeOut")
+        document.getElementById("model-bg").classList.remove("fadeIn")
+        document.getElementById("model-bg").style.visibility = "hidden"
 
         setTimeout(() => {
             document.getElementsByClassName('overlay')[0].classList.toggle("show")
-            document.getElementById("video-class").style.visibility = "hidden"
-            document.getElementById("video-subtitle").style.visibility = "hidden"
+            // document.getElementById("video-class").style.visibility = "hidden"
 
             setTimeout(() => {
-                // setCount((prev) => prev + 1)
-                let videoClass = document.getElementById("video-class")
 
-                setCount((prev) => prev+1)
+                
 
-                videoClass.style.visibility = "visible"
-                document.getElementById("video-subtitle").style.visibility = "visible"
 
-                videoClass.classList.add("fadeIn")
-                videoClass.classList.remove("fadeOut")
 
-                setTimeout(() => {
+            //     // setCount((prev) => prev + 1)
+                // let videoClass = document.getElementById("video-class")
+
+            //     setCount((prev) => prev+1)
+
+            //     videoClass.style.visibility = "visible"
+
+
+                // videoClass.classList.add("fadeIn")
+                // videoClass.classList.remove("fadeOut")
+
+                
+                document.getElementById("model-bg").classList.add("fadeIn")
+                document.getElementById("model-bg").classList.remove("fadeOut")
+                document.getElementById("model-bg").style.visibility = "visible"
+
+            //     setTimeout(() => {
                     document.getElementById("video-subtitle").classList.add("fadeIn")
                     document.getElementById("video-subtitle").classList.remove("fadeOut")
-                }, 300)
+                    document.getElementById("video-subtitle").style.visibility = "visible"
 
-            }, 600);
 
-        }, 1200);
+            //     }, 300)
+
+            }, 1000);
+
+        }, 1000);
 
     }
 
@@ -84,19 +101,15 @@ function Section1() {
                         <div class="bar"></div>
                     </div>
 
-                    {/* <img id='video-class' src={imgArray[(count % 3)]} style={{ width: "80%", height: "auto" }} /> */}
-                    <ModelComponent model={modelArray[count%5]} position={[0, 0, 0]} />
+                    <img class='model-bg' id='model-bg' src={item.Background} style={{width: "60%", height: "auto", opacity: item.Platform === "Clo3d" ? "0.1" : item.Platform === "Roblox" ? "0.03" : item.Platform === "Decentraland" ? "0.05" : "0.07" }}/>
+                    
+                    <ModelComponent model={item.Component} position={[0, 0, 0]} />
                     
                     {/* model info */}
-                    <div id='video-subtitle' className='text-white d-flex flex-column video-subtitle' style={{ fontFamily: "Clash Display Light" }}>
-                        <div className='d-flex justify-space-between'>
-                            <div>POLYCOUNT:</div>
-                            <div> &nbsp; 20000</div>
-                        </div>
-                        <div className='d-flex justify-space-between'>
-                            <div>TEXTURE SIZE:</div>
-                            <div> 5000</div>
-                        </div>
+                    <div id='video-subtitle' className='text-white d-flex flex-column video-subtitle align-items-end' style={{ fontFamily: "Clash Display Light" }}>
+                        <div>Platform: {item.Platform}</div>
+                        <div>{item.Platform !== "Sandbox" ? "Polycount:" : ""} {item.Polycount}</div>
+                        <div>{item.Platform !== "Sandbox" ? "Texture Size:" : ""} {item.Texture}</div>
                     </div>
                 
                 </div>
@@ -114,7 +127,7 @@ function Section1() {
                     </div>
                 </div>
 
-
+                {/* TEXT */}
                 <div className='col-sm-6 about-container'>
                     {/* <AnimatedText
                         type="chars" // animate words or chars
