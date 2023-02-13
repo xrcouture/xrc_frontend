@@ -12,6 +12,7 @@ import { SANDBOX } from '../../Models/SANDBOX'
 import { DCL } from '../../Models/DCL'
 import { OG } from '../../Models/OG'
 import { ROBLOX } from '../../Models/ROBLOX'
+import { VibranceSplash } from '../../Models/VibranceSplash'
 
 import ModelComponent from './ModelComponent';
 
@@ -19,7 +20,7 @@ function Section1() {
 
     // const [currModel, setCurrModel] = useState(<ROBLOX />)
     const [count, setCount] = useState(0)
-    const modelArray = [<DCL />, <SANDBOX />, <OG />, <ROBLOX />]
+    const modelArray = [<VibranceSplash />, <DCL />, <SANDBOX />, <OG />, <ROBLOX />]
 
     // const imgArray = [image1, image2, image3]
 
@@ -84,7 +85,7 @@ function Section1() {
                     </div>
 
                     {/* <img id='video-class' src={imgArray[(count % 3)]} style={{ width: "80%", height: "auto" }} /> */}
-                    <ModelComponent model={modelArray[count%4]} position={[-200, 0, 0]} />
+                    <ModelComponent model={modelArray[count%5]} position={[0, 0, 0]} />
                     
                     {/* model info */}
                     <div id='video-subtitle' className='text-white d-flex flex-column video-subtitle' style={{ fontFamily: "Clash Display Light" }}>

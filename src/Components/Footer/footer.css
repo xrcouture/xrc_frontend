@@ -42,6 +42,7 @@
   background: linear-gradient(180deg, #432BFF 0%, #6534FF 100%);
   font-size: 0.95rem;
   padding: 0.8rem 1rem;
+  color: #fff !important;
 }
 
 .footer-logo-container {
