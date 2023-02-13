@@ -1,11 +1,16 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './footer.css'
 // import AnimatedText from 'react-animated-text-content';
+import { AiFillInstagram } from 'react-icons/ai';
+import { FaDiscord,FaFacebookF,FaTwitter,FaLinkedinIn } from 'react-icons/fa';
+import { Formik,Form, Field, ErrorMessage } from 'formik';
+import axios from 'axios';
 
 const Footer = () => {
 
   const footerLogo = 'https://xrcouture-xrcie.s3.ap-south-1.amazonaws.com/Metadrip/xr_logo.png'
-
+  const [err,setErr] = useState("")
+  const [success,setSuccess] = useState("")
   return (
     <>
     <div className='footer-container d-md-flex d-none'>
@@ -42,20 +47,74 @@ const Footer = () => {
           <div className='footer-subscribe-form'>
 
             {/* <input className='footer-subscribe-text' type="text">Subscribe for newsletter</input> */}
+
+            <Formik
+              initialValues={{ email: '' }}
+              validate={values => {
+                const errors = {};
+                if (!values.email) {
+                  errors.email = 'Email is required';
+                  setErr(errors.email)
+                } else if (
+                  !/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i.test(values.email)
+                ) {
+                  errors.email = 'Invalid email address';
+                  setErr(errors.email)
+                }
+                setErr("")
+                return errors;
+              }}
+              onSubmit={async(values, { setSubmitting }) => {
+                console.log(values)
+                await axios.post("http://localhost:5000/user/newsLetter",values,{headers: {
+                  'Access-Control-Allow-Origin': '*',
+                  'Content-Type': 'application/json',
+              }},)
+                .then((response) => {
+                        setSuccess("Subscribed successfully")
+                      })
+                .catch(err => setSuccess("Form submission failed, Try again!"))
+                setSubmitting(false);
+                setTimeout(()=>{setSuccess("")},3000)  
+              }}
+            >
+              {({ isSubmitting,errors, touched }) => (
+                <Form className='w-100 d-flex justify-content-between align-items-center'>
+                  <Field type="email" name="email" placeholder='Subscribe for newsletter' className='footer-subscribe-text w-100'  required />
+                  <button type="submit" className='footer-subscribe-button' disabled={isSubmitting}>
+                    Submit
+                  </button>
+                </Form>
+              )}
+            </Formik>
+
+
+{/* 
             <input className='footer-subscribe-text' type="text" name="name" placeholder='Subscribe for newsletter' />
-            <button className='footer-subscribe-button'>Sign up</button>
+            <button className='footer-subscribe-button'>Sign up</button> */}
 
           </div>
-
+          <p className='text-danger mt-2'>{err}</p>
+          {success == "Subscribed successfully" ? <div className='text-success response'>{success}</div> : <div className='text-danger response'>{success}</div>}
         </div>
 
         <div className='footer-options-container-two d-none d-md-block'>
           <div className='d-flex mt-4'>
-            <i className="social-icons lab la-facebook-f"></i>
-            <i className="social-icons lab la-instagram"></i>
-            <i className="social-icons lab la-twitter"></i>
-            <i className="social-icons lab la-linkedin-in"></i>
-            <i className="social-icons lab la-discord"></i>
+            <a href='https://www.facebook.com/xr.couture/' target="_blank" className='icons'>
+              <FaFacebookF  color='black' />
+            </a>
+            <a href='https://www.instagram.com/xr.couture/?hl=en' target='_blank' className='icons'>
+            <AiFillInstagram  color='black' />
+            </a>
+            <a href='https://twitter.com/XRCouture' target='_blank' className='icons'>
+              <FaTwitter  color='black' />
+            </a>
+            <a href='https://www.linkedin.com/company/xrcouture/' target="_blank" className='icons'>
+              <FaLinkedinIn  color='black' />
+            </a>
+            <a href='https://tr.ee/nTjMdc6n0h' target='_blank' className='icons'>
+              <FaDiscord  color='black' />
+            </a>
           </div>
 
           <div className='footer-links d-flex mt-5'>
@@ -80,11 +139,13 @@ const Footer = () => {
 
       </div>
 
-      <div className='footer-logo-container col-md-4 mt-5 mt-md-0'>
+      <div className=' col-md-4 mt-5 mt-md-0'>
+        <div className='footer-logo-container h-100'>
         <img className='footer-logo mt-3 mt-md-0' src={footerLogo} alt=""></img>
-        <div className='footer-logo-subtitle d-flex flex-column justify-contents-center align-items-center'>
+        </div>
+        <div className='footer-logo-subtitle text-center'>
           {/* <div>XR COUTURE 2023</div> */}
-          <div className='mt-2'>All Right Reserved&#8482; 2023</div>
+          <div className='mb-2'>All Right Reserved&#8482; 2023</div>
         </div>
       </div>
 
@@ -159,11 +220,21 @@ const Footer = () => {
 
         <div className='footer-options-container-two d-none d-md-block'>
           <div className='d-flex mt-4'>
-            <i className="social-icons lab la-facebook-f"></i>
-            <i className="social-icons lab la-instagram"></i>
-            <i className="social-icons lab la-twitter"></i>
-            <i className="social-icons lab la-linkedin-in"></i>
-            <i className="social-icons lab la-discord"></i>
+          <a href='https://www.facebook.com/xr.couture/' target="_blank" className='icons'>
+              <FaFacebookF color='black' />
+            </a>
+            <a href='https://www.instagram.com/xr.couture/?hl=en' target='_blank' className="icons">
+            <AiFillInstagram color='black' />
+            </a>
+            <a href='https://twitter.com/XRCouture' target='_blank' className='icons'>
+              <FaTwitter color='black' />
+            </a>
+            <a href='https://www.linkedin.com/company/xrcouture/' target="_blank" className='icons'>
+              <FaLinkedinIn color="black" />
+            </a>
+            <a href='https://tr.ee/nTjMdc6n0h' target='_blank' className='icons'>
+              <FaDiscord color='black' />
+            </a>
           </div>
 
           <div className='footer-links d-flex mt-5'>
@@ -176,11 +247,21 @@ const Footer = () => {
 
       </div>
       <div className='d-flex justify-content-start mt-5'>
-                  <i className="social-icons lab la-facebook-f"></i>
-                  <i className="social-icons lab la-instagram"></i>
-                  <i className="social-icons lab la-twitter"></i>
-                  <i className="social-icons lab la-linkedin-in"></i>
-                  <i className="social-icons lab la-discord"></i>
+      <a href='https://www.facebook.com/xr.couture/' target="_blank" className='icons'>
+              <FaFacebookF color='black' />
+            </a>
+            <a href='https://www.instagram.com/xr.couture/?hl=en' target='_blank' className="icons">
+            <AiFillInstagram color='black' />
+            </a>
+            <a href='https://twitter.com/XRCouture' target='_blank' className='icons'>
+              <FaTwitter color='black' />
+            </a>
+            <a href='https://www.linkedin.com/company/xrcouture/' target="_blank" className='icons'>
+              <FaLinkedinIn color="black" />
+            </a>
+            <a href='https://tr.ee/nTjMdc6n0h' target='_blank' className='icons'>
+              <FaDiscord color='black' />
+            </a>
                 </div>
 
       <div className='footer-logo-container col-md-4 mt-5 mt-md-0'>

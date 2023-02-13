@@ -264,3 +264,6 @@
         line-height: calc(var(--more-info-subtitle-line)*2.2);
     }
 }
+.status{
+    margin-left: 5%;
+}

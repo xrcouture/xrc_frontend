@@ -115,7 +115,7 @@ function Section1() {
                 </div>
 
                 {/* refresh button for desktop */}
-                <div onClick={changeIMG} style={{ cursor: "pointer", zIndex: "10000000" }} className='refresh-btn-des d-none d-sm-flex'>
+                <div onClick={changeIMG} style={{cursor: "pointer", zIndex: "100"}} className='refresh-btn-des d-none d-sm-flex'>
                     <div className='icon'>
                         <IoMdRefresh className='d-md-none' size={35} color="white" style={{ color: "white", fontSize: "100px" }} />
                         <IoMdRefresh className='d-none d-md-block d-lg-none' size={40} color="white" style={{ color: "white", fontSize: "100px" }} />

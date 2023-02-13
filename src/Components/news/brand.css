@@ -43,6 +43,9 @@ div.marquee>a>img {
   animation-timing-function: linear;
   animation-iteration-count: infinite;
 }
+.marquee-wrapper:hover .marquee{
+  animation-play-state: paused !important;
+}
 
 .marquee a {
   display: inherit;
