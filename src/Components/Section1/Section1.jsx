@@ -31,37 +31,50 @@ function Section1() {
         // document.getElementById("video-class").classList.add("fadeOut")
         // document.getElementById("video-class").classList.remove("fadeIn")
 
-        // document.getElementById("video-subtitle").classList.add("fadeOut")
-        // document.getElementById("video-subtitle").classList.remove("fadeIn")
+        document.getElementById("video-subtitle").classList.add("fadeOut")
+        document.getElementById("video-subtitle").classList.remove("fadeIn")
+        document.getElementById("video-subtitle").style.visibility = "hidden"
 
-        // document.getElementById("model-bg").classList.add("fadeOut")
-        // document.getElementById("model-bg").classList.remove("fadeIn")
+
+        document.getElementById("model-bg").classList.add("fadeOut")
+        document.getElementById("model-bg").classList.remove("fadeIn")
+        document.getElementById("model-bg").style.visibility = "hidden"
 
         setTimeout(() => {
             document.getElementsByClassName('overlay')[0].classList.toggle("show")
             // document.getElementById("video-class").style.visibility = "hidden"
-            // document.getElementById("video-subtitle").style.visibility = "hidden"
-            // document.getElementById("model-bg").style.visibility = "hidden"
 
-            // setTimeout(() => {
+            setTimeout(() => {
+
+                
+
+
+
             //     // setCount((prev) => prev + 1)
                 // let videoClass = document.getElementById("video-class")
 
             //     setCount((prev) => prev+1)
 
             //     videoClass.style.visibility = "visible"
-            //     document.getElementById("video-subtitle").style.visibility = "visible"
-            //     // document.getElementById("model-bg").style.visibility = "visible"
+
 
                 // videoClass.classList.add("fadeIn")
                 // videoClass.classList.remove("fadeOut")
 
+                
+                document.getElementById("model-bg").classList.add("fadeIn")
+                document.getElementById("model-bg").classList.remove("fadeOut")
+                document.getElementById("model-bg").style.visibility = "visible"
+
             //     setTimeout(() => {
-            //         document.getElementById("video-subtitle").classList.add("fadeIn")
-            //         document.getElementById("video-subtitle").classList.remove("fadeOut")
+                    document.getElementById("video-subtitle").classList.add("fadeIn")
+                    document.getElementById("video-subtitle").classList.remove("fadeOut")
+                    document.getElementById("video-subtitle").style.visibility = "visible"
+
+
             //     }, 300)
 
-            // }, 600);
+            }, 1000);
 
         }, 1000);
 
