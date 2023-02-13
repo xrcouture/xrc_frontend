@@ -66,6 +66,12 @@
   font-size: 0.95rem;
   padding: 0.8rem 1rem;
   color: white !important;
+  border: 2px solid #6534FF;
+}
+.footer-subscribe-button:hover{
+  background:transparent;
+  border: 2px solid white;
+  transition-delay: .1s;
 }
 
 .footer-logo-container {
@@ -103,6 +109,10 @@
 
 textarea:focus, input:focus{
   outline: none;
+}
+textarea:autofill, input:autofill{
+  outline: none;
+  background-color: transparent;
 }
 
 .footer-links > div, .social-icons {

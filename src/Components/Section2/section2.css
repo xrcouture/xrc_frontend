@@ -24,7 +24,7 @@
     -webkit-text-fill-color: transparent;
     background-clip: text;
     color: transparent;
-    animation: discover 1s linear;
+    animation: discover 2s linear;
     user-select: none;
 }
 @keyframes discover {
@@ -63,6 +63,7 @@
     transform:translate(-55%,-100%) rotate(270deg);
     color: white;
     left: 0;
+    font-family: 'Clash Display Medium';
     /* display: none; */
 
 }

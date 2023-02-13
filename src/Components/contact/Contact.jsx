@@ -1,14 +1,15 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './contact.css'
 import * as Yup from "yup";
 import { Formik } from 'formik';
+import axios from 'axios'
+import { ToastContainer, toast } from 'react-toastify';
 // import hand1 from '../../assets/hand1.png'
 // import hand2 from '../../assets/hand2.png'
 // import hand3 from '../../assets/hand3.png'
 
 function Contact() {
-  const phoneRegExp = /^((\\+[1-9]{1,4}[ \\-]*)|(\\([0-9]{2,3}\\)[ \\-]*)|([0-9]{2,4})[ \\-]*)*?[0-9]{3,4}?[ \\-]*[0-9]{3,4}?$/
-
+  const [success,setSuccess] = useState("")
   const SignUpSchema = Yup.object().shape({
     name: Yup.string()
       .min(2, "Name is too short")
@@ -28,13 +29,25 @@ function Contact() {
   });
   return (
     <div className='contact'>
+      <ToastContainer
+        position="bottom-left"
+        autoClose={3000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover={false}
+        theme="dark"
+        />
         <div className='bg-contact'></div>
       <div className='row contact-row'>
       <div className='col-sm-6 more-info-container p-4'>
         <h1 className='more-info-title'>For More Information </h1>
         <div className='more-info-subtitle mt-4'>
-          <p className='more-info-sub'><b>Partnerships : </b> <a href='mailto:partnerships@xrcouture.com' className='text-white text-decoration-none'  style={{fontFamily:"Clash Display Light"}}> &nbsp;partnerships@xrcouture.com</a></p>
-          <p className='more-info-sub'><b>Press Enquires : </b><a href='mailto:press@xrcouture.com' className='text-white text-decoration-none' style={{fontFamily:"Clash Display Light"}}> &nbsp;press@xrcouture.com</a></p>
+          <p className='more-info-sub'><b>Partnerships : </b> <a href='mailto:hello@xrcouture.com' className='text-white text-decoration-none'  style={{fontFamily:"Clash Display Light"}}> &nbsp;partnerships@xrcouture.com</a></p>
+          <p className='more-info-sub'><b>Press Enquires : </b><a href='mailto:hello@xrcouture.com' className='text-white text-decoration-none' style={{fontFamily:"Clash Display Light"}}> &nbsp;press@xrcouture.com</a></p>
           <p className='more-info-sub'><b>General Enquires :</b><a href='mailto:hello@xrcouture.com' className='text-white text-decoration-none' style={{fontFamily:"Clash Display Light"}}> &nbsp;hello@xrcouture.com</a></p>
         </div>
       </div>
@@ -49,11 +62,17 @@ function Contact() {
             <Formik
                   initialValues={{name:"", email: '', phone: '',message:"" }}
                   validationSchema={SignUpSchema}
-                  onSubmit={(values, { setSubmitting }) => {
-                    setTimeout(() => {
-                      // alert(JSON.stringify(values, null, 2));
-                      setSubmitting(false);
-                    }, 400);
+                  onSubmit={async(values, { setSubmitting }) => {
+                  console.log(values)
+                    await axios.post("http://localhost:5000/user/contact",values,{headers: {
+                  'Access-Control-Allow-Origin': '*',
+                  'Content-Type': 'application/json',
+              }})
+                    .then((response) => {
+                            setSuccess("Form submitted successfully")
+                          })
+                    .catch(err => setSuccess("Form submission failed, Try again!"))
+                    setSubmitting(false);
                   }}
                 >
                   {({
@@ -105,9 +124,12 @@ function Contact() {
                         style={{height:"100px"}}
                       />
                       <p className='error text-danger contact-subtitle'>{errors.message && touched.message && errors.message}</p>
+                      <div className='d-flex align-items-center'>
                       <button type="submit" className='footer-subscribe-button' disabled={isSubmitting}>
                         Submit Form
                       </button>
+                      {success == "Form submitted successfully" ? <div className='status text-success'>{success}</div> : <div className='status text-danger'>{success}</div>}
+                      </div>
                     </form>
                   )}
                 </Formik>

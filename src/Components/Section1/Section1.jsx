@@ -55,11 +55,11 @@ function Section1() {
                 setTimeout(() => {
                     document.getElementById("video-subtitle").classList.add("fadeIn")
                     document.getElementById("video-subtitle").classList.remove("fadeOut")
-                }, 200)
+                }, 300)
 
-            }, 500);
+            }, 600);
 
-        }, 1000);
+        }, 1200);
 
     }
 
