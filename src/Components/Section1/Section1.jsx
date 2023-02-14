@@ -117,7 +117,7 @@ function Section1() {
                         <div class="bar"></div>
                     </div>
 
-                    <img class='model-bg' id='model-bg' src={item.Background} style={{width: "60%", height: "auto", opacity: item.Platform === "Clo3d" ? "0.1" : item.Platform === "Roblox" ? "0.03" : item.Platform === "Decentraland" ? "0.05" : "0.07" }}/>
+                    <img class='model-bg' id='model-bg' src={item.Background} style={{width: "60%", height: "auto", opacity: "1" }}/>
                     
                     <ModelComponent model={item.Component} position={[0, 0, 0]} />
                     
