@@ -162,7 +162,7 @@ function Section1() {
                         threshold={0.5}
                         rootMargin="20%"
                     > */}
-                    <div className='pb-4 d-flex flex-row'>
+                    <div className='pb-4 d-flex flex-row about-title-container'>
                     <div className='about-title   bounce-in-bottom-1'>A</div>
                     <div className='about-title   bounce-in-bottom-2'>B</div>
                     <div className='about-title   bounce-in-bottom-3'>O</div>
