@@ -1,6 +1,8 @@
 import './App.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'react-toastify/dist/ReactToastify.css';
+import 'animate.css';
+import { useEffect } from 'react';
 import {
   createBrowserRouter,
   RouterProvider,
@@ -21,6 +23,26 @@ const router = createBrowserRouter([
 
 
 function App() {
+  const observer = new IntersectionObserver((enteries)=>{
+    enteries.forEach((entry)=>{
+      var children = entry.target.children
+      if(entry.isIntersecting){
+        // entry.target.classList.add("animate__animated", "animate__fadeInUp")
+      for(let i =0; i<children.length;i++){
+          children[i].classList.add(`f-${i}`)
+      }
+      }else{
+        console.log("leaved")
+        // entry.target.classList.remove("animate__fadeInUp")
+      }
+    })
+  })
+  useEffect(() => {
+    const hiddenElements = document.querySelectorAll(".hidden")
+    hiddenElements.forEach((el)=> observer.observe(el))
+  },[]);
+
+  
 
   return (
     <RouterProvider router={router} />

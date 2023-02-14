@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { IoMdRefresh } from 'react-icons/io';
-import svg from '../../assets/done.svg'
+import svg from '../../assets/done.png'
 import FadeIn from 'react-fade-in';
 import './section1.css'
 
@@ -123,7 +123,7 @@ function Section1() {
                         <IoMdRefresh className='d-none d-xl-block' size={50} color="white" style={{ color: "white", fontSize: "100px" }} />
                     </div>
                     <div className='text'>
-                        <img src={svg} alt="" />
+                        <img src={svg} alt="" style={{position:"relative",height:"100%"}} />
                     </div>
                 </div>
 
@@ -146,7 +146,13 @@ function Section1() {
                         threshold={0.5}
                         rootMargin="20%"
                     > */}
-                    <div className='about-title pb-4'>ABOUT</div>
+                    <div className='pb-4 d-flex flex-row'>
+                    <div className='about-title   bounce-in-bottom-1'>A</div>
+                    <div className='about-title   bounce-in-bottom-2'>B</div>
+                    <div className='about-title   bounce-in-bottom-3'>O</div>
+                    <div className='about-title   bounce-in-bottom-4'>U</div>
+                    <div className='about-title   bounce-in-bottom-5'>T</div>
+                    </div>
                     {/* ABOUT */}
                     {/* </AnimatedText> */}
 
@@ -160,7 +166,7 @@ function Section1() {
                             <IoMdRefresh size={30} color="white" style={{ color: "white", fontSize: "100px" }} />
                         </div>
                         <div className='text'>
-                            <img src={svg} alt="" />
+                            <img src={svg} alt="" style={{position:"relative",height:"100%"}} />
                         </div>
                     </div>
                 </div>
