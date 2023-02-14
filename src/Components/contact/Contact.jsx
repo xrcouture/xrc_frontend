@@ -8,6 +8,8 @@ import { ToastContainer, toast } from 'react-toastify';
 // import hand2 from '../../assets/hand2.png'
 // import hand3 from '../../assets/hand3.png'
 
+import ScrollAnimation from 'react-animate-on-scroll';
+
 function Contact() {
   const [success,setSuccess] = useState("")
   const SignUpSchema = Yup.object().shape({
@@ -53,7 +55,9 @@ function Contact() {
       </div>
         <div className='col-sm-6 position-relative p-0 d-flex justify-content-center'>
           <div className='contact-form position-relative p-5'>
-            <h1 className='contact-title'>GET IN TOUCH</h1>
+            <ScrollAnimation animateIn='fadeIn' animateOnce={true}>
+                <h1 className='contact-title'>GET IN TOUCH</h1>
+            </ScrollAnimation>
             {/* <p className='contact-subtitle'>
             In diam consequat nec eu. Eu sem nec vel, sollicitudin ipsum viverra sed nibh amet. Nunc, et pharetra, duis tortor dictum nisl. Id vestibulum tincidunt adipiscing gravida risus.
             </p> */}
