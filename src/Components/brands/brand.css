@@ -61,7 +61,7 @@ div.marquee>a>img {
   /* border: 1px solid #000 !important; */
   box-shadow: 219px 0px 61px rgba(0, 0, 0, 0.02), 140px 0px 56px rgba(0, 0, 0, 0.15), 79px 0px 47px rgba(0, 0, 0, 0.5), 35px 0px 35px rgba(0, 0, 0, 0.85), 9px 0px 19px rgba(0, 0, 0, 0.98), 0px 0px 0px #000000;
   color: black !important ;
-  min-width: 15rem;
+  min-width: 8rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -69,8 +69,7 @@ div.marquee>a>img {
   font-family: Clash Display Bold;
   font-size: 20px;
   line-height: 34px;
-  white-space: nowrap;
-
+  text-align: center;
 }
 .l2, .l5, .l6{
   /* filter: grayscale(100%) !important;   */
@@ -94,5 +93,11 @@ div.marquee>a>img {
 
   100% {
     transform: translate3d(-100%, 0, 0);
+  }
+}
+
+@media (min-width: 768px) {
+  .brand-heading {
+    min-width: 15rem;
   }
 }
