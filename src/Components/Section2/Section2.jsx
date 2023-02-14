@@ -1,7 +1,5 @@
 import React from 'react'
 import './section2.css'
-import snap from '../../assets/snap.png'
-import qr from '../../assets/snap-qr.png'
 import video1 from '../../assets/CristalTrench.mp4'
 import video2 from '../../assets/8.mp4'
 import video3 from '../../assets/31.mp4'
@@ -31,7 +29,7 @@ function Section2() {
         {/* <div className='discover-style text-center'>TRY  ON AR</div> */}
         {/* </AnimatedText> */}
         <div className='w-100 d-flex justify-content-center'>
-            <h1 className="discover-style">TRY ON AR</h1>
+            <h1 className="discover-style animate__animated animate__fadeInDown">TRY ON AR</h1>
         </div>
       <div className='row cards-overall-container mt-5'>
         <div className='col-sm-4 d-flex justify-content-center mobile-ar-card'>
@@ -41,7 +39,7 @@ function Section2() {
             {/* <img src={qr} alt="" className="qr" /> */}
             {/* <img src={snap} alt="" className='snap-img' /> */}
             <video src={video2} autoPlay loop muted className="snap-img" />
-            <h5 className='card-text text-bold about-subtitle'>CryptoPunks</h5>
+            <h5 className='card-text text-bold about-subtitle'>Flora Flamboyance</h5>
           </div>
         </div>
           </div>
@@ -54,7 +52,8 @@ function Section2() {
             <img src={qrnew} alt="" className="qr" />
             {/* <img src={snap} alt="" className='snap-img' /> */}
             <video src={video1} autoPlay loop muted className="snap-img" />
-            <h5 className='about-subtitle card-text'>CryptoPunks</h5>
+             <h5 className='about-subtitle card-text'>Cristal Trench</h5>   
+            
           </div>
         </div>
           </div>
@@ -67,7 +66,7 @@ function Section2() {
             {/* <img src={qr} alt="" className="qr" /> */}
             {/* <img src={snap} alt="" className='snap-img' /> */}
             <video src={video3} autoPlay loop muted className="snap-img" />
-            <h5 className='card-text about-subtitle'>CryptoPunks</h5>
+            <h5 className='card-text about-subtitle'>Vibrance Splash</h5>
           </div>
         </div>
           </div>

@@ -8,6 +8,7 @@ import axios from 'axios';
 
 const Footer = () => {
 
+
   const footerLogo = 'https://xrcouture-xrcie.s3.ap-south-1.amazonaws.com/Metadrip/xr_logo.png'
   const [err,setErr] = useState("")
   const [success,setSuccess] = useState("")
@@ -39,6 +40,7 @@ const Footer = () => {
             rootMargin="20%"
           >
           </AnimatedText> */}
+          
           <div className='footer-options-title pt-5'>
             WEAR CLOTHES THAT DON'T EXIST.
           </div>
@@ -66,7 +68,7 @@ const Footer = () => {
               }}
               onSubmit={async(values, { setSubmitting }) => {
                 console.log(values)
-                await axios.post("http://localhost:5000/user/newsLetter",values,{headers: {
+                await axios.post("https://api.metadata.xrcouture.com/user/newsLetter",values,{headers: {
                   'Access-Control-Allow-Origin': '*',
                   'Content-Type': 'application/json',
               }},)

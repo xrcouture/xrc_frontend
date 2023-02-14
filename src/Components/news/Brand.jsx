@@ -33,6 +33,11 @@ import "./brand.css";
 
 function Brand1() {
   return (
+    <>
+    <div className="d-flex flex-row overflow-hidden">
+    <div className="brand-heading">
+     As seen in
+    </div>    
     <div
       style={{ borderBottom: ".5px solid #fff", borderTop: ".5px solid #fff" }}
     >
@@ -303,6 +308,8 @@ function Brand1() {
         </div>
       </section>
     </div>
+    </div>
+</>
   );
 }
 

@@ -22,6 +22,51 @@
   width: 100%;
 
 }
+.f-1 {
+	-webkit-animation: slide 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+.f-2 {
+	-webkit-animation: slide 1.3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide 1.3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+.f-3 {
+	-webkit-animation: slide 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+.f-4 {
+	-webkit-animation: slide 1.6s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide 1.6s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+.f-5 {
+	-webkit-animation: slide 1.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide 1.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@-webkit-keyframes slide {
+  0% {
+    -webkit-transform: translateZ(-100px) translateY(100px);
+            transform: translateZ(-100px) translateY(100px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateZ(0) translateY(0);
+            transform: translateZ(0) translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes slide {
+  0% {
+    -webkit-transform: translateZ(-100px) translateY(100px);
+            transform: translateZ(-100px) translateY(100px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateZ(0) translateY(0);
+            transform: translateZ(0) translateY(0);
+    opacity: 1;
+  }
+}
 
 .footer-subscribe-text {
   font-family: "Clash Display Light";
