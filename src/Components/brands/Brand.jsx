@@ -35,7 +35,7 @@ function Brand() {
   return (
     <>
     <div className="d-flex flex-row overflow-hidden">
-    <div className="brand-heading about-subtitle text-center" style={{fontFamily:"Clash Display Bold"}}>
+    <div className="brand-heading" style={{fontFamily:"Clash Display Bold"}}>
      Who we work with  
     </div>    
     <div
