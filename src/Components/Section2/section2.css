@@ -16,7 +16,7 @@
     margin-top: 0;
     font-family: 'Clash Display Bold';
     font-style: normal;
-    word-spacing: 3rem;
+    word-spacing: 1rem;
     font-weight: 700;
     font-size: 15vw;
     line-height: 15vw;
@@ -284,6 +284,7 @@
     color: white;
     left: 0;
     font-family: 'Clash Display Medium';
+    text-align: left;
     /* display: none; */
 
 }
@@ -334,6 +335,9 @@
     .mobile-ar-card {
         order: 0;
     }
+    .discover-style{
+        word-spacing: 2rem;
+    }
 }
 @media (max-width: 576px) {
     .discover-style{
@@ -341,3 +345,9 @@
         word-spacing: none !important;
     }
 }
+
+@media (min-width: 1200px) {
+        .discover-style{
+            word-spacing: 3rem;
+        }
+    }
