@@ -8,12 +8,13 @@ import { ModelData } from '../../Models/ModelData'
 
 import ModelComponent from './ModelComponent'
 
-
 function Section1() {
 
     const [count, setCount] = useState(0)
     const modelArray = ["Clo3d", "Roblox" , "Decentraland" , "Sandbox" ]
     const [item, setItem] = useState(ModelData[modelArray[count]])
+
+    const [transition, setTransition] = useState(false)
 
 
     useEffect(() => {
@@ -24,7 +25,10 @@ function Section1() {
 
     const changeIMG = () => {
 
-        setCount((prev) => ((prev+1)%4))
+        if (!transition) {
+                    // setCount((prev) => ((prev+1)%4))
+        document.getElementsByClassName('overlay')[0].style.zIndex = "11"
+
 
         document.getElementsByClassName('overlay')[0].classList.toggle("show")
 
@@ -36,16 +40,22 @@ function Section1() {
         document.getElementById("video-subtitle").style.visibility = "hidden"
 
 
-        document.getElementById("model-bg").classList.add("fadeOut")
-        document.getElementById("model-bg").classList.remove("fadeIn")
-        document.getElementById("model-bg").style.visibility = "hidden"
 
+        // document.getElementById("model-bg").classList.add("fadeOut")
+        // document.getElementById("model-bg").classList.remove("fadeIn")
+        // document.getElementById("model-bg").style.visibility = "hidden"
+
+        setTransition((prev) => !prev)
+        // console.log("started")
         setTimeout(() => {
-            document.getElementsByClassName('overlay')[0].classList.toggle("show")
+
+            setCount((prev) => ((prev+1)%4))
+            
             // document.getElementById("video-class").style.visibility = "hidden"
-
+            
             setTimeout(() => {
-
+                
+                document.getElementsByClassName('overlay')[0].classList.toggle("show")
                 
 
 
@@ -62,21 +72,27 @@ function Section1() {
                 // videoClass.classList.remove("fadeOut")
 
                 
-                document.getElementById("model-bg").classList.add("fadeIn")
-                document.getElementById("model-bg").classList.remove("fadeOut")
-                document.getElementById("model-bg").style.visibility = "visible"
+                // document.getElementById("model-bg").classList.add("fadeIn")
+                // document.getElementById("model-bg").classList.remove("fadeOut")
+                // document.getElementById("model-bg").style.visibility = "visible"
 
-            //     setTimeout(() => {
+                setTimeout(() => {
                     document.getElementById("video-subtitle").classList.add("fadeIn")
                     document.getElementById("video-subtitle").classList.remove("fadeOut")
                     document.getElementById("video-subtitle").style.visibility = "visible"
 
+                    document.getElementsByClassName('overlay')[0].style.zIndex = "9"
 
-            //     }, 300)
+                    setTransition((prev) => !prev)
+                    // console.log("finished")
 
-            }, 1000);
+                }, 1000)
+
+
+            }, 500);
 
         }, 1000);
+        }
 
     }
 
@@ -101,7 +117,7 @@ function Section1() {
                         <div class="bar"></div>
                     </div>
 
-                    <img class='model-bg' id='model-bg' src={item.Background} style={{width: "60%", height: "auto", opacity: item.Platform === "Clo3d" ? "0.1" : item.Platform === "Roblox" ? "0.03" : item.Platform === "Decentraland" ? "0.05" : "0.07" }}/>
+                    <img class='model-bg' id='model-bg' src={item.Background} style={{width: "60%", height: "auto", opacity: "1" }}/>
                     
                     <ModelComponent model={item.Component} position={[0, 0, 0]} />
                     
@@ -155,6 +171,7 @@ function Section1() {
                     </div>
                     {/* ABOUT */}
                     {/* </AnimatedText> */}
+                    {/* <div className='about-title pb-4'>ABOUT</div> */}
 
                     <FadeIn>
                         <div className="about-subtitle">XR Couture is a leading digital wearables platform which creates hyper-realistic 3D digital wearables which can be worn on avatars across multiple metaverse platforms and online games.</div>

@@ -25,6 +25,7 @@
 
 .xrc-logo {
   width: 9rem;
+  user-select: none;
 }
 
 .header-options {
