@@ -129,6 +129,7 @@
 
 .footer-logo {
   width: 10rem;
+  margin: auto;
 }
 
 .footer-logo-subtitle {
@@ -224,6 +225,7 @@ textarea:autofill, input:autofill{
   }
   .footer-logo {
     width: 11rem;
+    margin: unset;
   }
   .footer-logo-subtitle {
     font-family: "Clash Display Light";

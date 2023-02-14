@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./header.css";
+import hl from '../../assets/xrcnew.png'
 
 import { Squeeze as Hamburger } from "hamburger-react";
 import { Link } from "react-router-dom";
@@ -46,7 +47,8 @@ const Header = () => {
   return (
     <div className="header-container">
       <Link to={"/"} className="xrc-logo-container">
-        <img className="xrc-logo" src={headerLogo}></img>
+        {/* <img className="xrc-logo" src={headerLogo}></img> */}
+        <img className="xrc-logo" src={hl}></img>
         <div className="logo-border"></div>
       </Link>
 

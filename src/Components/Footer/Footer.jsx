@@ -6,6 +6,8 @@ import { FaDiscord,FaFacebookF,FaTwitter,FaLinkedinIn } from 'react-icons/fa';
 import { Formik,Form, Field, ErrorMessage } from 'formik';
 import axios from 'axios';
 
+import fl from '../../assets/xrcnew.png'
+
 const Footer = () => {
 
 
@@ -143,7 +145,8 @@ const Footer = () => {
 
       <div className=' col-md-4 mt-5 mt-md-0'>
         <div className='footer-logo-container h-100'>
-        <img className='footer-logo mt-3 mt-md-0' src={footerLogo} alt=""></img>
+        {/* <img className='footer-logo mt-3 mt-md-0' src={footerLogo} alt=""></img> */}
+        <img className='footer-logo mt-3 mt-md-0' src={fl} alt=""></img>
         </div>
         <div className='footer-logo-subtitle text-center'>
           {/* <div>XR COUTURE 2023</div> */}
@@ -291,7 +294,8 @@ const Footer = () => {
       </div>
             </div>
             <div className='col-xs-6 col-sm-6 w-50'>
-            <img className='footer-logo mt-3 mb-3 mt-md-0' src={footerLogo} alt=""></img>
+            {/* <img className='footer-logo mt-3 mb-3 mt-md-0' src={footerLogo} alt=""></img> */}
+            <img className='footer-logo mt-3 mb-3 mt-md-0' src={fl} alt=""></img>
             </div>
             <div className='footer-logo-subtitle d-flex flex-column justify-contents-center align-items-center'>
               {/* <div>XR COUTURE 2023</div> */}
