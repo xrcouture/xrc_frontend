@@ -33,6 +33,11 @@ import "./brand.css";
 
 function Brand() {
   return (
+    <>
+    <div className="d-flex flex-row overflow-hidden">
+    <div className="brand-heading about-subtitle text-center" style={{fontFamily:"Clash Display Bold"}}>
+     Who we work with  
+    </div>    
     <div
       style={{ borderBottom: ".5px solid #fff", borderTop: ".5px solid #fff" }}
     >
@@ -303,6 +308,10 @@ function Brand() {
         </div>
       </section>
     </div>
+    </div>
+
+
+    </>
   );
 }
 
