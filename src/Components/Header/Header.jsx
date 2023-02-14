@@ -56,7 +56,7 @@ const Header = () => {
         {/* <div className='header-options-links d-none d-sm-flex'> */}
         <div className="header-link header-options-item">
           <a
-            href="https://xrcouture.com/"
+            href="https://xrcouture.com/collections/web2"
             target="_blank"
             style={{ color: "white" }}
           >
@@ -89,7 +89,7 @@ const Header = () => {
           <ul class="menu">
             <li class="menu-item">
             <a
-            href="https://xrcouture.com/"
+            href="https://xrcouture.com/collections/web2"
             target="_blank"
             style={{ color: "white" }}
           >

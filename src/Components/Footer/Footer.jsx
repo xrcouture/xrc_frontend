@@ -123,7 +123,7 @@ const Footer = () => {
 
           <div className='footer-links d-flex mt-5'>
             <div className='mb-4'>
-            <a href='https://xrcouture.com/' target='_blank' className='text-white text-decoration-none'>
+            <a href='https://xrcouture.com/collections/web2' target='_blank' className='text-white text-decoration-none'>
                   Web2 Collection
             </a>
             </div>
@@ -165,7 +165,7 @@ const Footer = () => {
 
         <div className='footer-links text-center mt-5 d-sm-flex justify-content-center'>
           <div className='m-3'>
-          <a href='https://xrcouture.com/' target='_blank' className='text-white text-decoration-none'>
+          <a href='https://xrcouture.com/collections/web2' target='_blank' className='text-white text-decoration-none'>
                   Web2 Collection
             </a>
             </div>
@@ -275,7 +275,7 @@ const Footer = () => {
             <div className='footer-options-container-two d-md-none flex-column'>
                 <div className='footer-links mt-5 d-sm-flex justify-content-start flex-column'>
                   <div className='mb-3'>
-                  <a href='https://xrcouture.com/' target='_blank' className='text-white text-decoration-none'>
+                  <a href='https://xrcouture.com/collections/web2' target='_blank' className='text-white text-decoration-none'>
                   Web2 Collection
                     </a>
                     </div>
