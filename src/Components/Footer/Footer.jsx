@@ -150,7 +150,7 @@ const Footer = () => {
         </div>
         <div className='footer-logo-subtitle text-center'>
           {/* <div>XR COUTURE 2023</div> */}
-          <div className='mb-2'>All Right Reserved&#8482; 2023</div>
+          <div className='mb-2'>XR COUTURE. All Right Reserved&#8482; 2023</div>
         </div>
       </div>
 
@@ -251,7 +251,7 @@ const Footer = () => {
         </div>
 
       </div>
-      <div className='d-flex justify-content-start mt-5'>
+      <div className='d-flex justify-content-center mt-5'>
       <a href='https://www.facebook.com/xr.couture/' target="_blank" className='icons'>
               <FaFacebookF color='black' />
             </a>
@@ -299,7 +299,7 @@ const Footer = () => {
             </div>
             <div className='footer-logo-subtitle d-flex flex-column justify-contents-center align-items-center'>
               {/* <div>XR COUTURE 2023</div> */}
-              <div className='mt-2 mb-4'>All Right Reserved&#8482; 2023</div>
+              <div className='mt-2 mb-4'>XR COUTURE. All Right Reserved&#8482; 2023</div>
             </div>
         </div>
 
