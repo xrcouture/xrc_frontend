@@ -7,8 +7,8 @@ import { ToastContainer, toast } from 'react-toastify';
 // import hand1 from '../../assets/hand1.png'
 // import hand2 from '../../assets/hand2.png'
 // import hand3 from '../../assets/hand3.png'
+import FadeIn from 'react-fade-in';
 
-import ScrollAnimation from 'react-animate-on-scroll';
 
 function Contact() {
   const [success,setSuccess] = useState("")
@@ -55,9 +55,10 @@ function Contact() {
       </div>
         <div className='col-sm-6 position-relative p-0 d-flex justify-content-center'>
           <div className='contact-form position-relative p-5'>
-            <ScrollAnimation animateIn='fadeIn' animateOnce={true}>
-                <h1 className='contact-title'>GET IN TOUCH</h1>
-            </ScrollAnimation>
+
+            <FadeIn>
+              <h1 className='contact-title'>GET IN TOUCH</h1> 
+            </FadeIn>
             {/* <p className='contact-subtitle'>
             In diam consequat nec eu. Eu sem nec vel, sollicitudin ipsum viverra sed nibh amet. Nunc, et pharetra, duis tortor dictum nisl. Id vestibulum tincidunt adipiscing gravida risus.
             </p> */}

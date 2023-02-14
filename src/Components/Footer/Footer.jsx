@@ -8,7 +8,9 @@ import axios from 'axios';
 
 import fl from '../../assets/xrcnew.png'
 
-import ScrollAnimation from 'react-animate-on-scroll';
+// import ScrollAnimation from 'react-animate-on-scroll';
+import FadeIn from 'react-fade-in';
+
 
 const Footer = () => {
 
@@ -47,11 +49,11 @@ const Footer = () => {
           
 
 
-          <ScrollAnimation animateIn='fadeIn' animateOnce={true}>
-          <div className='footer-options-title pt-5'>
-            WEAR CLOTHES THAT DON'T EXIST.
-          </div>
-            </ScrollAnimation>
+          <FadeIn>
+            <div className='footer-options-title pt-5'>
+              WEAR CLOTHES THAT DON'T EXIST.
+            </div>
+          </FadeIn>
 
 
           <div className='footer-subscribe-form'>
@@ -215,9 +217,9 @@ const Footer = () => {
             threshold={0.5}
             rootMargin="20%"
           > */}
-            <ScrollAnimation animateIn='fadeIn' animateOnce={true}>
-                <div className='footer-options-title pt-5'>WEAR CLOTHES THAT DON'T EXIST.</div>
-            </ScrollAnimation>
+            <FadeIn>
+              <div className='footer-options-title pt-5'>WEAR CLOTHES THAT DON'T EXIST.</div>
+            </FadeIn>
           {/* </AnimatedText> */}
 
 
