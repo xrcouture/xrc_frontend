@@ -133,10 +133,13 @@ function Section1() {
                 {/* refresh button for desktop */}
                 <div onClick={changeIMG} style={{cursor: "pointer", zIndex: "100"}} className='refresh-btn-des d-none d-sm-flex'>
                     <div className='icon'>
-                        <IoMdRefresh className='d-md-none' size={35} color="white" style={{ color: "white", fontSize: "100px" }} />
+                        <div className='text-white text-center des-click-here'>
+                            CLICK <br /> HERE
+                        </div>
+                        {/* <IoMdRefresh className='d-md-none' size={35} color="white" style={{ color: "white", fontSize: "100px" }} />
                         <IoMdRefresh className='d-none d-md-block d-lg-none' size={40} color="white" style={{ color: "white", fontSize: "100px" }} />
                         <IoMdRefresh className='d-none d-lg-block d-xl-none' size={45} color="white" style={{ color: "white", fontSize: "100px" }} />
-                        <IoMdRefresh className='d-none d-xl-block' size={50} color="white" style={{ color: "white", fontSize: "100px" }} />
+                        <IoMdRefresh className='d-none d-xl-block' size={50} color="white" style={{ color: "white", fontSize: "100px" }} /> */}
                     </div>
                     <div className='text'>
                         <img src={svg} alt="" style={{position:"relative",height:"100%"}} />
@@ -180,7 +183,10 @@ function Section1() {
 
                     <div onClick={changeIMG} className='refresh-btn-mob d-sm-none'>
                         <div className='icon'>
-                            <IoMdRefresh size={30} color="white" style={{ color: "white", fontSize: "100px" }} />
+                            <div className='text-white text-center mob-click-here'>
+                                CLICK <br /> HERE
+                            </div>
+                            {/* <IoMdRefresh size={30} color="white" style={{ color: "white", fontSize: "100px" }} /> */}
                         </div>
                         <div className='text'>
                             <img src={svg} alt="" style={{position:"relative",height:"100%"}} />

@@ -112,6 +112,7 @@
   padding: 0.8rem 1rem;
   color: white !important;
   border: 2px solid #6534FF;
+  letter-spacing: 0.025rem;
 }
 .footer-subscribe-button:hover{
   background:transparent;

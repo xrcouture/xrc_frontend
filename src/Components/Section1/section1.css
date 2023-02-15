@@ -744,3 +744,55 @@
     filter: grayscale(1);
     user-select: none;
 }
+
+.mob-click-here {
+    font-size: 0.45rem;
+    font-family: 'Clash Display Bold';
+    margin: auto;
+    letter-spacing: 0.03rem;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-45%);
+}
+
+.des-click-here {
+    font-size: 0.45rem;
+    font-family: 'Clash Display Bold';
+    margin: auto;
+    letter-spacing: 0.04rem;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-45%);
+}
+
+@media (min-width: 992px) {
+    .des-click-here {
+        font-size: 0.6rem;
+        top: 50%;
+        transform: translateY(-48%);
+    }
+}
+
+@media (min-width: 1200px) {
+    .des-click-here {
+        font-size: 0.7rem;
+        top: 50%;
+        transform: translateY(-46%);
+    }
+}
+
+@media (min-width: 1500px) {
+    .des-click-here {
+        font-size: 0.8rem;
+        top: 50%;
+        transform: translateY(-47%);
+    }
+}
+
+@media (min-width: 1700px) {
+    .des-click-here {
+        font-size: 0.9rem;
+        top: 50%;
+        transform: translateY(-46%);
+    }
+}

@@ -165,7 +165,7 @@ const Footer = () => {
         </div>
         <div className='footer-logo-subtitle text-center'>
           {/* <div>XR COUTURE 2023</div> */}
-          <div className='mb-2'>XR COUTURE. All Right Reserved&#8482; 2023</div>
+          <div className='mb-2'>XR COUTURE. All Rights Reserved&#8482; 2023</div>
         </div>
       </div>
 
@@ -314,7 +314,7 @@ const Footer = () => {
             </div>
             <div className='footer-logo-subtitle d-flex flex-column justify-contents-center align-items-center'>
               {/* <div>XR COUTURE 2023</div> */}
-              <div className='mt-2 mb-4'>XR COUTURE. All Right Reserved&#8482; 2023</div>
+              <div className='mt-2 mb-4'>XR COUTURE. All Rights Reserved&#8482; 2023</div>
             </div>
         </div>
 

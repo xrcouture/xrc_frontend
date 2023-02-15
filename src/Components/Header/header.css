@@ -44,6 +44,7 @@
   font-size: 1rem;
   font-family: "Clash Display Bold";
   border: 2px solid #432BFF;
+  letter-spacing: 0.025rem;
 }
 .header-options-button:hover{
   background:transparent;
