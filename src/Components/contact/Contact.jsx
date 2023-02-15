@@ -69,7 +69,7 @@ function Contact() {
                   validationSchema={SignUpSchema}
                   onSubmit={async(values, { setSubmitting }) => {
                   console.log(values)
-                    await axios.post("https://api.metadata.xrcouture.com/user/contact",values,{headers: {
+                    await axios.post("https://api.metadrip.xrcouture.com/user/contact",values,{headers: {
                   'Access-Control-Allow-Origin': '*',
                   'Content-Type': 'application/json',
               }})
