@@ -6,6 +6,15 @@ import { Squeeze as Hamburger } from "hamburger-react";
 import { Link } from "react-router-dom";
 
 const Header = () => {
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0, 
+      behavior: 'smooth'
+      /* you can also use 'auto' behaviour
+         in place of 'smooth' */
+    });
+  }
+
   const [size, setSize] = useState("sm");
   const [screenWidth, setScreenWidth] = useState(window.innerWidth);
 
@@ -48,7 +57,7 @@ const Header = () => {
     <div className="header-container">
       <Link to={"/"} className="xrc-logo-container">
         {/* <img className="xrc-logo" src={headerLogo}></img> */}
-        <img className="xrc-logo" src={headerLogo}></img>
+        <img className="xrc-logo" onClick={scrollToTop} src={headerLogo}></img>
         <div className="logo-border"></div>
       </Link>
 
