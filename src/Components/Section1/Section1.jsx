@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect, lazy, Suspense } from 'react'
 import { IoMdRefresh } from 'react-icons/io';
 // import svg from '../../assets/done.png'
 import FadeIn from 'react-fade-in';
@@ -6,7 +6,10 @@ import './section1.css'
 
 import { ModelData } from '../../Models/ModelData'
 
-import ModelComponent from './ModelComponent'
+// import ModelComponent from './ModelComponent'
+
+const ModelComponent = React.lazy(() => import('./ModelComponent'));
+
 
 function Section1() {
 
@@ -129,7 +132,16 @@ function Section1() {
 
                     <img class='model-bg' id='model-bg' src={item.Background} style={{width: "60%", height: "auto", opacity: "1" }}/>
                     
-                    <ModelComponent model={item.Component} position={[0, 0, 0]} />
+                    <Suspense fallback={
+                        <div className='spinner-container'>
+                            <div class="spinner-border spinner-border-sm text-white" style={{"width": "2.5rem", "height": "2.5rem"}} role="status"></div>
+                        </div>
+                    }>
+                        <ModelComponent model={item.Component} position={[0, 0, 0]} />
+                    </Suspense>
+                    
+
+
                     
                     {/* model info */}
                     <div id='video-subtitle' className='text-white d-flex flex-column video-subtitle align-items-start' style={{ fontFamily: "Clash Display Light" }}>
@@ -137,7 +149,6 @@ function Section1() {
                         <div>{item.Platform !== "Sandbox" ? "Texture Size:" : ""} {item.Texture}</div>
                     </div>
                     <div className='position-absolute logo-image' id='logo-image' ><img src={item.logo} alt="" style={{maxHeight: item.Platform === "Sandbox" ? "2rem" : "1.5rem"}}/></div>
-                 
                 </div>
 
                 {/* refresh button for desktop */}

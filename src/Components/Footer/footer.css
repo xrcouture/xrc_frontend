@@ -408,29 +408,32 @@ textarea:autofill, input:autofill{
 /* @keyframes fup1 {
   0% {
     opacity: 0;
-    transform: translateY(20%);
+    color: red;
+    transform: translateY(-100px);
   }
   100% {
     opacity: 1;
+    color: #fff;
     transform: translateY(0%);
   }
 }
 
 .new-0 {
-  animation: fup1 2s ease-in 0s;
+  animation: fup1 .3s ease-in 0s;
 }
 .new-1 {
-  animation: fup1 2.2s ease-in 0s;
+  animation: fup1 .3s ease-in 0.5s;
 }
 .new-2 {
-  animation: fup1 2.4s ease-in 0s;
+  animation: fup1 .3s ease-in .3s;
 }
 .new-3 {
-  animation: fup1 2.6s ease-in 0s;
+  animation: fup1 .3s ease-in 1.5s;
 }
 .new-4 {
-  animation: fup1 2.8s ease-in 0s;
+  animation: fup1 .3s ease-in 2s;
 }
 .new-5 {
-  animation: fup1 2.8s ease-in 0s;
+  animation: fup1 .3
+  s ease-in 2.5s;
 } */

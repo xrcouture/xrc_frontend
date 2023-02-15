@@ -5,7 +5,7 @@ import { FaDiscord,FaFacebookF,FaTwitter,FaLinkedinIn } from 'react-icons/fa';
 import { Formik,Form, Field, ErrorMessage } from 'formik';
 import axios from 'axios';
 
-// import fl from '../../assets/xrcnew.png'
+// import footerLogo from '../../assets/xrcwithtext.png'
 
 import { Link } from 'react-router-dom';
 
@@ -21,7 +21,7 @@ const Footer = () => {
   }
 
 
-  const footerLogo = 'https://xrcouture-xrcie.s3.ap-south-1.amazonaws.com/XRC_Homepage/homepage_contents/xrcnew.webp'
+  const footerLogo = 'https://xrcouture-xrcie.s3.ap-south-1.amazonaws.com/XRC_Homepage/homepage_contents/xrcwithtext.webp'
   const [err,setErr] = useState("")
   const [success,setSuccess] = useState("")
   return (
@@ -57,12 +57,11 @@ const Footer = () => {
 
 
           {/* <div className='footer-options-title pt-5'>
-          <span>WEAR</span>
-          <span>CLOTHES</span>
-          <span>THAT</span>
-          <br />
-          <span>DON'T</span>
-          <span>EXIST.</span>
+          <p>WEAR</p>
+          <p>CLOTHES</p>
+          <p>THAT</p>
+          <p>DON'T</p>
+          <p>EXIST.</p>
           </div> */}
 
 
@@ -176,7 +175,7 @@ const Footer = () => {
         </div>
         <div className='footer-logo-subtitle text-center'>
           {/* <div>XR COUTURE 2023</div> */}
-          <div className='mb-2'>XR COUTURE. All Rights Reserved&#8482; 2023</div>
+          <div className='mb-2'>All Rights Reserved&#8482; 2023</div>
         </div>
       </div>
 
@@ -325,7 +324,7 @@ const Footer = () => {
             </div>
             <div className='footer-logo-subtitle d-flex flex-column justify-contents-center align-items-center'>
               {/* <div>XR COUTURE 2023</div> */}
-              <div className='mt-2 mb-4'>XR COUTURE. All Rights Reserved&#8482; 2023</div>
+              <div className='mt-2 mb-4'>All Rights Reserved&#8482; 2023</div>
             </div>
         </div>
 
