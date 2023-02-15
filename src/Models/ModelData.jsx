@@ -13,10 +13,10 @@ const decentraland = "https://xrcouture-xrcie.s3.ap-south-1.amazonaws.com/XRC_Ho
 const roblox = "https://xrcouture-xrcie.s3.ap-south-1.amazonaws.com/XRC_Homepage/homepage_contents/roblox.webp"
 const clo3d = "https://xrcouture-xrcie.s3.ap-south-1.amazonaws.com/XRC_Homepage/homepage_contents/clo3d.webp"
 
-import clotext from '../assets/logo-text/clo.png'
-import roboloxtext from '../assets/logo-text/robolox.png'
-import dcltext from '../assets/logo-text/dcl.png'
-import sandtext from '../assets/logo-text/sandbox.png'
+const  clotext = 'https://xrcouture-xrcie.s3.ap-south-1.amazonaws.com/XRC_Homepage/homepage_contents/clo.png'
+const roboloxtext = 'https://xrcouture-xrcie.s3.ap-south-1.amazonaws.com/XRC_Homepage/homepage_contents/robolox.png'
+const dcltext = 'https://xrcouture-xrcie.s3.ap-south-1.amazonaws.com/XRC_Homepage/homepage_contents/dcl.png'
+const sandtext = 'https://xrcouture-xrcie.s3.ap-south-1.amazonaws.com/XRC_Homepage/homepage_contents/sandbox.png'
 
 export const ModelData = {
   "Clo3d": {

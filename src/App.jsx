@@ -3,6 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import 'react-toastify/dist/ReactToastify.css';
 import 'animate.css';
 import { useEffect } from 'react';
+import ScrollToTop from './Pages/ScrollToTop';
 import {
   createBrowserRouter,
   RouterProvider,
@@ -45,7 +46,8 @@ function App() {
   
 
   return (
-    <RouterProvider router={router} />
+
+      <RouterProvider router={router} />
   )
 }
 
