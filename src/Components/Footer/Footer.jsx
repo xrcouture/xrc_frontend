@@ -8,8 +8,18 @@ import axios from 'axios';
 // import fl from '../../assets/xrcnew.png'
 
 import AnimatedText from 'react-animated-text-content'
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
+
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0, 
+      behavior: 'smooth'
+      /* you can also use 'auto' behaviour
+         in place of 'smooth' */
+    });
+  }
 
 
   const footerLogo = 'https://xrcouture-xrcie.s3.ap-south-1.amazonaws.com/XRC_Homepage/homepage_contents/xrcnew.webp'
@@ -163,7 +173,7 @@ const Footer = () => {
       <div className=' col-md-4 mt-5 mt-md-0'>
         <div className='footer-logo-container h-100'>
         {/* <img className='footer-logo mt-3 mt-md-0' src={footerLogo} alt=""></img> */}
-        <img className='footer-logo mt-3 mt-md-0' src={footerLogo} alt=""></img>
+        <img className='footer-logo mt-3 mt-md-0' onClick={scrollToTop} src={footerLogo} alt=""></img>
         </div>
         <div className='footer-logo-subtitle text-center'>
           {/* <div>XR COUTURE 2023</div> */}

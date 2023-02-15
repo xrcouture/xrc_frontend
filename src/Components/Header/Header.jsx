@@ -74,11 +74,11 @@ const Header = () => {
         </div>
         {/* </div> */}
 
-        <button className="header-options-button header-options-item">
-          <Link to={"/contact"} style={{ color: "white" }}>
+        {/* <button className="header-options-button header-options-item"> */}
+          <Link to={"/contact"}   className="header-options-button header-options-item" style={{ color: "white", borderRadius:"8px" }}>
             Contact Us
           </Link>
-        </button>
+        {/* </button> */}
       </div>
 
       <div className='d-md-none' onClick={showMobileMenu} style={{zIndex: "100"}}>

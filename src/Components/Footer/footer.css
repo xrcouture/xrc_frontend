@@ -129,6 +129,7 @@
 }
 
 .footer-logo {
+  cursor: pointer;
   width: 10rem;
   margin: auto;
 }
