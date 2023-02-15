@@ -402,3 +402,18 @@ textarea:autofill, input:autofill{
     width: 39rem;
   }
 }
+
+/* @keyframes fup1 {
+  0% {
+    opacity: 0;
+    transform: translateY(10%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+
+.footer-options-title {
+  animation: fup1 2s ease-in 0s;
+} */

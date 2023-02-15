@@ -1,16 +1,12 @@
 import React, { useState } from 'react'
 import './footer.css'
-// import AnimatedText from 'react-animated-text-content';
+import AnimatedText from 'react-animated-text-content';
 import { AiFillInstagram } from 'react-icons/ai';
 import { FaDiscord,FaFacebookF,FaTwitter,FaLinkedinIn } from 'react-icons/fa';
 import { Formik,Form, Field, ErrorMessage } from 'formik';
 import axios from 'axios';
 
 import fl from '../../assets/xrcnew.png'
-
-// import ScrollAnimation from 'react-animate-on-scroll';
-import FadeIn from 'react-fade-in';
-
 
 const Footer = () => {
 
@@ -28,7 +24,7 @@ const Footer = () => {
 
         <div className='footer-options-container-one'>
 
-          {/* <AnimatedText
+          <AnimatedText
             type="words" // animate words or chars
             animation={{
               x: '200px',
@@ -40,20 +36,19 @@ const Footer = () => {
             interval={0.05}
             duration={0.5}
             tag="p"
-            className="animated-paragraph "
+            className="animated-paragraph footer-options-title pt-5"
             includeWhiteSpaces
             threshold={0.5}
             rootMargin="20%"
           >
-          </AnimatedText> */}
+          WEAR CLOTHES THAT DON'T EXIST.
+          </AnimatedText>
           
 
 
-          <FadeIn>
-            <div className='footer-options-title pt-5'>
-              WEAR CLOTHES THAT DON'T EXIST.
-            </div>
-          </FadeIn>
+          {/* <div className='footer-options-title pt-5'>
+            WEAR CLOTHES THAT DON'T EXIST.
+          </div> */}
 
 
           <div className='footer-subscribe-form'>
@@ -217,9 +212,7 @@ const Footer = () => {
             threshold={0.5}
             rootMargin="20%"
           > */}
-            <FadeIn>
-              <div className='footer-options-title pt-5'>WEAR CLOTHES THAT DON'T EXIST.</div>
-            </FadeIn>
+          <div className='footer-options-title pt-5'>WEAR CLOTHES THAT DON'T EXIST.</div>
           {/* </AnimatedText> */}
 
 
