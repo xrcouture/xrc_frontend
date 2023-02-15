@@ -16,6 +16,17 @@
     --opacity: 0.5;
     --bgcolor: #222021
 }
+.logo-image{
+    position: absolute;
+    right: 0px !important;
+    bottom: 0px !important;
+    padding: 1rem !important;
+}
+
+.logo-image img {
+    max-height: 1.5rem;
+    width: auto;
+}
 
 .row {
     margin: 0 !important;
@@ -698,7 +709,7 @@
 
 .video-subtitle {
     position: absolute;
-    right: 1rem;
+    left: 1rem;
     bottom: 1rem;
     user-select: none;
 }

@@ -39,6 +39,11 @@ function Section1() {
         document.getElementById("video-subtitle").classList.remove("fadeIn")
         document.getElementById("video-subtitle").style.visibility = "hidden"
 
+        document.getElementById("logo-image").classList.add("fadeOut")
+        document.getElementById("logo-image").classList.remove("fadeIn")
+        document.getElementById("logo-image").style.visibility = "hidden"
+
+
 
 
         // document.getElementById("model-bg").classList.add("fadeOut")
@@ -81,6 +86,10 @@ function Section1() {
                     document.getElementById("video-subtitle").classList.remove("fadeOut")
                     document.getElementById("video-subtitle").style.visibility = "visible"
 
+                    document.getElementById("logo-image").classList.add("fadeIn")
+                    document.getElementById("logo-image").classList.remove("fadeOut")
+                    document.getElementById("logo-image").style.visibility = "visible"
+
                     document.getElementsByClassName('overlay')[0].style.zIndex = "9"
 
                     setTransition((prev) => !prev)
@@ -122,12 +131,12 @@ function Section1() {
                     <ModelComponent model={item.Component} position={[0, 0, 0]} />
                     
                     {/* model info */}
-                    <div id='video-subtitle' className='text-white d-flex flex-column video-subtitle align-items-end' style={{ fontFamily: "Clash Display Light" }}>
-                        <div>Platform: {item.Platform}</div>
+                    <div id='video-subtitle' className='text-white d-flex flex-column video-subtitle align-items-start' style={{ fontFamily: "Clash Display Light" }}>
                         <div>{item.Platform !== "Sandbox" ? "Polycount:" : ""} {item.Polycount}</div>
                         <div>{item.Platform !== "Sandbox" ? "Texture Size:" : ""} {item.Texture}</div>
                     </div>
-                
+                    <div className='position-absolute logo-image' id='logo-image' ><img src={item.logo} alt="" style={{maxHeight: item.Platform === "Sandbox" ? "2rem" : "1.5rem"}}/></div>
+                 
                 </div>
 
                 {/* refresh button for desktop */}
