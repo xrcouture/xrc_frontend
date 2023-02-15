@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import './footer.css'
-import AnimatedTexts from 'react-animated-text-content';
 import { AiFillInstagram } from 'react-icons/ai';
 import { FaDiscord,FaFacebookF,FaTwitter,FaLinkedinIn } from 'react-icons/fa';
 import { Formik,Form, Field, ErrorMessage } from 'formik';
@@ -24,7 +23,7 @@ const Footer = () => {
 
         <div className='footer-options-container-one'>
 
-          <AnimatedTexts
+          {/* <AnimatedTexts
             type="words" // animate words or chars
             animation={{
               x: '200px',
@@ -42,14 +41,27 @@ const Footer = () => {
             rootMargin="20%"
           >
           WEAR CLOTHES THAT DON'T EXIST.
-          </AnimatedTexts>
+          </AnimatedTexts> */}
           
 
 
           {/* <div className='footer-options-title pt-5'>
-            WEAR CLOTHES THAT DON'T EXIST.
+          <span>WEAR</span>
+          <span>CLOTHES</span>
+          <span>THAT</span>
+          <br />
+          <span>DON'T</span>
+          <span>EXIST.</span>
           </div> */}
 
+
+          <div className='footer-options-title pt-5'>
+          WEAR
+          CLOTHES
+          THAT
+          DON'T
+          EXIST.
+          </div>
 
           <div className='footer-subscribe-form'>
 

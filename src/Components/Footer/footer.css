@@ -406,7 +406,7 @@ textarea:autofill, input:autofill{
 /* @keyframes fup1 {
   0% {
     opacity: 0;
-    transform: translateY(10%);
+    transform: translateY(20%);
   }
   100% {
     opacity: 1;
@@ -414,6 +414,21 @@ textarea:autofill, input:autofill{
   }
 }
 
-.footer-options-title {
+.new-0 {
   animation: fup1 2s ease-in 0s;
+}
+.new-1 {
+  animation: fup1 2.2s ease-in 0s;
+}
+.new-2 {
+  animation: fup1 2.4s ease-in 0s;
+}
+.new-3 {
+  animation: fup1 2.6s ease-in 0s;
+}
+.new-4 {
+  animation: fup1 2.8s ease-in 0s;
+}
+.new-5 {
+  animation: fup1 2.8s ease-in 0s;
 } */

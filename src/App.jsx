@@ -23,24 +23,24 @@ const router = createBrowserRouter([
 
 
 function App() {
-  const observer = new IntersectionObserver((enteries)=>{
-    enteries.forEach((entry)=>{
-      var children = entry.target.children
-      if(entry.isIntersecting){
-        // entry.target.classList.add("animate__animated", "animate__fadeInUp")
-      for(let i =0; i<children.length;i++){
-          children[i].classList.add(`f-${i}`)
-      }
-      }else{
-        console.log("leaved")
-        // entry.target.classList.remove("animate__fadeInUp")
-      }
-    })
-  })
-  useEffect(() => {
-    const hiddenElements = document.querySelectorAll(".hidden")
-    hiddenElements.forEach((el)=> observer.observe(el))
-  },[]);
+  // const observer = new IntersectionObserver((enteries)=>{
+  //   enteries.forEach((entry)=>{
+  //     var children = entry.target.children
+  //     if(entry.isIntersecting){
+  //       // entry.target.classList.add(`new-${}`)
+  //     for(let i =0; i<=children.length;i++){
+  //         children[i].classList.add(`new-${i}`)
+  //     }
+  //     }else{
+  //       console.log("leaved")
+  //       // entry.target.classList.remove("animate__fadeInUp")
+  //     }
+  //   })
+  // })
+  // useEffect(() => {
+  //   const hiddenElements = document.querySelectorAll(".footer-options-title")
+  //   hiddenElements.forEach((el)=> observer.observe(el))
+  // },[]);
 
   
 
