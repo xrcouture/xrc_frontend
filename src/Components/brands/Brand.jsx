@@ -1,34 +1,20 @@
 import React from "react";
-// vogue business - news
-import vogue from "../../assets/brands-img/1.png";
-//bwm - brands - 3
-import bmw from "../../assets/brands-img/2.png";
-//polygon - brands - 4
-import polygon from "../../assets/brands-img/3.png";
-//ldc - brands - 6
-import ldc from "../../assets/brands-img/4.png";
-//forbes - news - 2
-import forbes from "../../assets/brands-img/5.png";
-//snapchat - brand - 2
-import snapchat from "../../assets/brands-img/6.png";
-//the week - news - 5
-import theweek from "../../assets/brands-img/7.png";
-//decenteraland - brand - 4
-import decenteraland from "../../assets/brands-img/8.png";
-//sega - brand - 1
-import sega from "../../assets/brands-img/9.webp";
-//bazaar - news - 1
-import bazaar from "../../assets/brands-img/10.png";
-// the crown - brand - 6
-import crown from "../../assets/brands-img/11.png";
-//wsj - news - 4
-import wsj from "../../assets/brands-img/12.png";
-// elle girl - news - 6
-import elle from "../../assets/brands-img/13.png";
-//business insider
-import bi from "../../assets/brands-img/14.png";
-//the national
-import tn from "../../assets/brands-img/15.png";
+// import bmw from "../../assets/brands-img/2.webp";
+// import polygon from "../../assets/brands-img/3.png";
+// import ldc from "../../assets/brands-img/4.png";
+// import snapchat from "../../assets/brands-img/6.png";
+// import decenteraland from "../../assets/brands-img/8.png";
+// import sega from "../../assets/brands-img/9.webp";
+// import crown from "../../assets/brands-img/11.png";
+
+const bmw = "https://xrcouture-xrcie.s3.ap-south-1.amazonaws.com/XRC_Homepage/homepage_contents/2.webp";
+const polygon = "https://xrcouture-xrcie.s3.ap-south-1.amazonaws.com/XRC_Homepage/homepage_contents/3.webp";
+const ldc = "https://xrcouture-xrcie.s3.ap-south-1.amazonaws.com/XRC_Homepage/homepage_contents/4.webp";
+const snapchat = "https://xrcouture-xrcie.s3.ap-south-1.amazonaws.com/XRC_Homepage/homepage_contents/6.webp";
+const decenteraland = "https://xrcouture-xrcie.s3.ap-south-1.amazonaws.com/XRC_Homepage/homepage_contents/8.webp";
+const sega = "https://xrcouture-xrcie.s3.ap-south-1.amazonaws.com/XRC_Homepage/homepage_contents/9.webp";
+const crown = "https://xrcouture-xrcie.s3.ap-south-1.amazonaws.com/XRC_Homepage/homepage_contents/11.webp";
+
 import "./brand.css";
 
 function Brand() {

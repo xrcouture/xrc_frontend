@@ -1,9 +1,15 @@
 import React from 'react'
 import './section2.css'
-import video1 from '../../assets/CristalTrench.mp4'
-import video2 from '../../assets/8.mp4'
-import video3 from '../../assets/31.mp4'
-import qrnew from '../../assets/snapcode.png'
+
+// import video1 from '../../assets/CristalTrench.mp4'
+// import video2 from '../../assets/8.mp4'
+// import video3 from '../../assets/31.mp4'
+// import qrnew from '../../assets/snapcode.png'
+
+const video1 = 'https://xrcouture-xrcie.s3.ap-south-1.amazonaws.com/XRC_Homepage/homepage_contents/CristalTrench.mp4'
+const video2 = 'https://xrcouture-xrcie.s3.ap-south-1.amazonaws.com/XRC_Homepage/homepage_contents/8.mp4'
+const video3 = 'https://xrcouture-xrcie.s3.ap-south-1.amazonaws.com/XRC_Homepage/homepage_contents/31.mp4'
+const qrnew = 'https://xrcouture-xrcie.s3.ap-south-1.amazonaws.com/XRC_Homepage/homepage_contents/snapcode.webp'
 
 // import AnimatedText from 'react-animated-text-content';
 function Section2() {

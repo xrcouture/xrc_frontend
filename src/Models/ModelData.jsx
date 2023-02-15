@@ -3,10 +3,15 @@ import { Roblox } from "./Roblox"
 import { Dcl } from "./Dcl"
 import { Sandbox } from "./Sandbox"
 
-import sandbox from "../assets/sandbox.png"
-import decentraland from "../assets/decentraland.png"
-import roblox from "../assets/roblox.png"
-import clo3d from "../assets/clo3d.png"
+// import sandbox from "../assets/sandbox.png"
+// import decentraland from "../assets/decentraland.png"
+// import roblox from "../assets/roblox.png"
+// import clo3d from "../assets/clo3d.png"
+
+const sandbox = "https://xrcouture-xrcie.s3.ap-south-1.amazonaws.com/XRC_Homepage/homepage_contents/sandbox.webp"
+const decentraland = "https://xrcouture-xrcie.s3.ap-south-1.amazonaws.com/XRC_Homepage/homepage_contents/decentraland.webp"
+const roblox = "https://xrcouture-xrcie.s3.ap-south-1.amazonaws.com/XRC_Homepage/homepage_contents/roblox.webp"
+const clo3d = "https://xrcouture-xrcie.s3.ap-south-1.amazonaws.com/XRC_Homepage/homepage_contents/clo3d.webp"
 
 export const ModelData = {
   "Clo3d": {

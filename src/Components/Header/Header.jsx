@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./header.css";
-import hl from '../../assets/xrcnew.png'
+// import hl from '../../assets/xrcnew.png'
 
 import { Squeeze as Hamburger } from "hamburger-react";
 import { Link } from "react-router-dom";
@@ -10,7 +10,7 @@ const Header = () => {
   const [screenWidth, setScreenWidth] = useState(window.innerWidth);
 
   const headerLogo =
-    "https://xrcouture-xrcie.s3.ap-south-1.amazonaws.com/Metadrip/xrc.png";
+    "https://xrcouture-xrcie.s3.ap-south-1.amazonaws.com/XRC_Homepage/homepage_contents/xrcnew.webp";
 
   const mediaMenuQueries = {
     small: "26",
@@ -48,7 +48,7 @@ const Header = () => {
     <div className="header-container">
       <Link to={"/"} className="xrc-logo-container">
         {/* <img className="xrc-logo" src={headerLogo}></img> */}
-        <img className="xrc-logo" src={hl}></img>
+        <img className="xrc-logo" src={headerLogo}></img>
         <div className="logo-border"></div>
       </Link>
 

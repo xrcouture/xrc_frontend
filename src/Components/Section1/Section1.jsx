@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { IoMdRefresh } from 'react-icons/io';
-import svg from '../../assets/done.png'
+// import svg from '../../assets/done.png'
 import FadeIn from 'react-fade-in';
 import './section1.css'
 
@@ -10,6 +10,7 @@ import ModelComponent from './ModelComponent'
 
 function Section1() {
 
+    const svg = "https://xrcouture-xrcie.s3.ap-south-1.amazonaws.com/XRC_Homepage/homepage_contents/done.webp"
     const [count, setCount] = useState(0)
     const modelArray = ["Clo3d", "Roblox" , "Decentraland" , "Sandbox" ]
     const [item, setItem] = useState(ModelData[modelArray[count]])

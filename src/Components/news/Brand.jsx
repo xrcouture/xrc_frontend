@@ -1,34 +1,22 @@
 import React from "react";
-// vogue business - news
-import vogue from "../../assets/brands-img/1.png";
-//bwm - brands - 3
-import bmw from "../../assets/brands-img/2.png";
-//polygon - brands - 4
-import polygon from "../../assets/brands-img/3.png";
-//ldc - brands - 6
-import ldc from "../../assets/brands-img/4.png";
-//forbes - news - 2
-import forbes from "../../assets/brands-img/5.png";
-//snapchat - brand - 2
-import snapchat from "../../assets/brands-img/6.png";
-//the week - news - 5
-import theweek from "../../assets/brands-img/7.png";
-//decenteraland - brand - 4
-import decenteraland from "../../assets/brands-img/8.png";
-//sega - brand - 1
-import sega from "../../assets/brands-img/9.webp";
-//bazaar - news - 1
-import bazaar from "../../assets/brands-img/10.png";
-// the crown - brand - 6
-import crown from "../../assets/brands-img/11.png";
-//wsj - news - 4
-import wsj from "../../assets/brands-img/12.png";
-// elle girl - news - 6
-import elle from "../../assets/brands-img/13.png";
-//business insider
-import bi from "../../assets/brands-img/14.png";
-//the national
-import tn from "../../assets/brands-img/15.png";
+// import vogue from "../../assets/brands-img/1.png";
+// import forbes from "../../assets/brands-img/5.png";
+// import theweek from "../../assets/brands-img/7.png";
+// import bazaar from "../../assets/brands-img/10.png";
+// import wsj from "../../assets/brands-img/12.png";
+// import elle from "../../assets/brands-img/13.png";
+// import bi from "../../assets/brands-img/14.png";
+// import tn from "../../assets/brands-img/15.png";
+
+const vogue = "https://xrcouture-xrcie.s3.ap-south-1.amazonaws.com/XRC_Homepage/homepage_contents/1.webp";
+const forbes = "https://xrcouture-xrcie.s3.ap-south-1.amazonaws.com/XRC_Homepage/homepage_contents/5.webp";
+const theweek = "https://xrcouture-xrcie.s3.ap-south-1.amazonaws.com/XRC_Homepage/homepage_contents/7.webp";
+const bazaar = "https://xrcouture-xrcie.s3.ap-south-1.amazonaws.com/XRC_Homepage/homepage_contents/10.webp";
+const wsj = "https://xrcouture-xrcie.s3.ap-south-1.amazonaws.com/XRC_Homepage/homepage_contents/12.webp";
+const elle = "https://xrcouture-xrcie.s3.ap-south-1.amazonaws.com/XRC_Homepage/homepage_contents/13.webp";
+const bi = "https://xrcouture-xrcie.s3.ap-south-1.amazonaws.com/XRC_Homepage/homepage_contents/14.webp";
+const tn = "https://xrcouture-xrcie.s3.ap-south-1.amazonaws.com/XRC_Homepage/homepage_contents/15.webp";
+
 import "./brand.css";
 
 function Brand1() {
