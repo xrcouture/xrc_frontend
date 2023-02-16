@@ -13,7 +13,7 @@ const qrnew3 = 'https://xrcouture-xrcie.s3.ap-south-1.amazonaws.com/XRC_Homepage
 function Section2() {
   return (
     <div className='try-on-ar'>
-    
+
       {/* <AnimatedText
         type="chars" // animate words or chars
         animation={{
@@ -44,7 +44,7 @@ function Section2() {
           <div className='card'>
             <div className='ar-card'>
               <div className='img-container'>
-              <a rel="noreferrer" target={'_blank'} href='https://lens.snapchat.com/1257e71f11094ab99530cd5cd635b85d?share_id=i8mO4QoQQyOLQ3hXFkvTzg&locale=en_SG&sid=cac16c6a94ba406c998a9ed00f4d90af'>
+                <a rel="noreferrer" target={'_blank'} href='https://lens.snapchat.com/1257e71f11094ab99530cd5cd635b85d'>
                   <img src={qrnew3} alt="" className="qr" />
                 </a>
                 <video src={video3} autoPlay loop muted playsInline className="snap-img" />
@@ -58,7 +58,9 @@ function Section2() {
           <div className='card'>
             <div className='ar-card'>
               <div className='img-container'>
-                <img src={qrnew1} alt="" className="qr" />
+                <a rel="noreferrer" target={'_blank'} href='https://lens.snapchat.com/435beccb14744014963d4661abd70fab'>
+                  <img src={qrnew1} alt="" className="qr" />
+                </a>
                 <video src={video1} autoPlay loop muted playsInline className="snap-img" />
                 <h5 className='about-subtitle card-text'>Cristal Trench</h5>
 
@@ -71,7 +73,7 @@ function Section2() {
           <div className='card'>
             <div className='ar-card'>
               <div className='img-container'>
-                <a rel="noreferrer" target={'_blank'} href='https://lens.snapchat.com/b9ec83e802404cc59f1d86c0cc12bc60?share_id=ezYv5v/IQ9ut7T6cPAvD4A&locale=en_SG&sid=efbbda65dc294453a6cf92c7dffa2c21'>
+                <a rel="noreferrer" target={'_blank'} href='https://lens.snapchat.com/b9ec83e802404cc59f1d86c0cc12bc60'>
                   <img src={qrnew2} alt="" className="qr" />
                 </a>
                 <video src={video2} autoPlay loop muted playsInline className="snap-img" />
