@@ -1,10 +1,12 @@
 import React from 'react'
 import './section2.css'
 
-const video1 = 'https://xrcouture-xrcie.s3.ap-south-1.amazonaws.com/XRC_Homepage/homepage_contents/CristalTrench.mp4'
-const video2 = 'https://xrcouture-xrcie.s3.ap-south-1.amazonaws.com/XRC_Homepage/homepage_contents/8.mp4'
-const video3 = 'https://xrcouture-xrcie.s3.ap-south-1.amazonaws.com/XRC_Homepage/homepage_contents/31.mp4'
-const qrnew = 'https://xrcouture-xrcie.s3.ap-south-1.amazonaws.com/XRC_Homepage/homepage_contents/snapcode.webp'
+const video1 = 'https://xrcouture-xrcie.s3.ap-south-1.amazonaws.com/XRC_Homepage/homepage_contents/CrystalTrench.mp4'
+const video2 = 'https://xrcouture-xrcie.s3.ap-south-1.amazonaws.com/XRC_Homepage/homepage_contents/Hijikata-preview.mp4'
+const video3 = 'https://xrcouture-xrcie.s3.ap-south-1.amazonaws.com/XRC_Homepage/homepage_contents/Ryoma-preview.mp4'
+const qrnew1 = 'https://xrcouture-xrcie.s3.ap-south-1.amazonaws.com/XRC_Homepage/homepage_contents/snapcode.webp'
+const qrnew2 = 'https://xrcouture-xrcie.s3.ap-south-1.amazonaws.com/XRC_Homepage/homepage_contents/hijikata_snapcode.png'
+const qrnew3 = 'https://xrcouture-xrcie.s3.ap-south-1.amazonaws.com/XRC_Homepage/homepage_contents/ryoma_snapcode.png'
 
 // import AnimatedText from 'react-animated-text-content';
 
@@ -42,8 +44,11 @@ function Section2() {
           <div className='card'>
             <div className='ar-card'>
               <div className='img-container'>
-                <video src={video2} autoPlay loop muted className="snap-img" />
-                <h5 className='card-text text-bold about-subtitle'>Flora Flamboyance</h5>
+              <a rel="noreferrer" target={'_blank'} href='https://lens.snapchat.com/1257e71f11094ab99530cd5cd635b85d?share_id=i8mO4QoQQyOLQ3hXFkvTzg&locale=en_SG&sid=cac16c6a94ba406c998a9ed00f4d90af'>
+                  <img src={qrnew3} alt="" className="qr" />
+                </a>
+                <video src={video3} autoPlay loop muted playsInline className="snap-img" />
+                <h5 className='card-text about-subtitle'>Sega - Ryoma</h5>
               </div>
             </div>
           </div>
@@ -53,8 +58,8 @@ function Section2() {
           <div className='card'>
             <div className='ar-card'>
               <div className='img-container'>
-                <img src={qrnew} alt="" className="qr" />
-                <video src={video1} autoPlay loop muted className="snap-img" />
+                <img src={qrnew1} alt="" className="qr" />
+                <video src={video1} autoPlay loop muted playsInline className="snap-img" />
                 <h5 className='about-subtitle card-text'>Cristal Trench</h5>
 
               </div>
@@ -66,8 +71,11 @@ function Section2() {
           <div className='card'>
             <div className='ar-card'>
               <div className='img-container'>
-                <video src={video3} autoPlay loop muted className="snap-img" />
-                <h5 className='card-text about-subtitle'>Vibrance Splash</h5>
+                <a rel="noreferrer" target={'_blank'} href='https://lens.snapchat.com/b9ec83e802404cc59f1d86c0cc12bc60?share_id=ezYv5v/IQ9ut7T6cPAvD4A&locale=en_SG&sid=efbbda65dc294453a6cf92c7dffa2c21'>
+                  <img src={qrnew2} alt="" className="qr" />
+                </a>
+                <video src={video2} autoPlay loop muted playsInline className="snap-img" />
+                <h5 className='card-text text-bold about-subtitle'>Sega - Hijikata</h5>
               </div>
             </div>
           </div>
