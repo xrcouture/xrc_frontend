@@ -16,6 +16,8 @@ function Section1() {
     const modelArray = ["Clo3d", "Roblox", "Decentraland", "Sandbox"]
     const [item, setItem] = useState(ModelData[modelArray[count]])
 
+    const [aboutAnimation, setAboutAnimation] = useState(true)
+
     const [transition, setTransition] = useState(false)
 
 
@@ -26,6 +28,8 @@ function Section1() {
 
 
     const changeIMG = () => {
+
+        setAboutAnimation(false)
 
         if (!transition) {
             // setCount((prev) => ((prev+1)%4))
@@ -167,25 +171,29 @@ function Section1() {
 
                 {/* TEXT */}
                 <div className='col-sm-6 about-container'>
-                    <AnimatedText
-                        type="chars" // animate words or chars
-                        animation={{
-                            x: '200px',
-                            y: '200px',
-                            scale: 1.1,
-                            ease: 'ease-in-out',
-                        }}
-                        animationType="wave"
-                        interval={0}
-                        duration={0.5}
-                        tag="p"
-                        className="animated-paragraph about-title"
-                        includeWhiteSpaces
-                        threshold={0.5}
-                        rootMargin="20%"
-                    >
-                        ABOUT
-                    </AnimatedText>
+                    {
+                        aboutAnimation ?
+                            <AnimatedText
+                                type="chars" // animate words or chars
+                                animation={{
+                                    x: '200px',
+                                    y: '200px',
+                                    scale: 1.1,
+                                    ease: 'ease-in-out',
+                                }}
+                                animationType="wave"
+                                interval={0}
+                                duration={0.5}
+                                tag="p"
+                                className="animated-paragraph about-title"
+                                includeWhiteSpaces
+                                threshold={0.5}
+                                rootMargin="20%"
+                            >
+                                ABOUT
+                            </AnimatedText> :
+                            <div className='about-title pb-3'>ABOUT</div>
+                    }
 
                     {/* <div className='pb-4 d-flex flex-row about-title-container'>
                             <div className='about-title   bounce-in-bottom-1'>A</div>
