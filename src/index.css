@@ -19,44 +19,28 @@ body{
 iframe {
   pointer-events: none;
 }
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
 
 @font-face {
   font-family: Clash Display Bold;
-  src: url("./ClashDisplay_Complete/Fonts/WEB/fonts/ClashDisplay-Bold.ttf");
+  src: url("https://xrcouture-xrcie.s3.ap-south-1.amazonaws.com/XRC_Homepage/homepage_contents/ClashDisplay-Bold.ttf");
 }
 @font-face {
   font-family: Clash Display Light;
-  src: url("./ClashDisplay_Complete/Fonts/WEB/fonts/ClashDisplay-Light.ttf");
+  src: url("https://xrcouture-xrcie.s3.ap-south-1.amazonaws.com/XRC_Homepage/homepage_contents/ClashDisplay-Light.ttf");
 }
 @font-face {
   font-family: Clash Display ExtraLight;
-  src: url("./ClashDisplay_Complete/Fonts/WEB/fonts/ClashDisplay-Extralight.ttf");
+  src: url("https://xrcouture-xrcie.s3.ap-south-1.amazonaws.com/XRC_Homepage/homepage_contents/ClashDisplay-Extralight.ttf");
 }
 @font-face {
   font-family: Clash Display Medium;
-  src: url("./ClashDisplay_Complete/Fonts/WEB/fonts/ClashDisplay-Medium.ttf");
+  src: url("https://xrcouture-xrcie.s3.ap-south-1.amazonaws.com/XRC_Homepage/homepage_contents/ClashDisplay-Medium.ttf");
 }
 @font-face {
   font-family: Clash Display SemiBold;
-  src: url("./ClashDisplay_Complete/Fonts/WEB/fonts/ClashDisplay-Semibold.ttf");
-  
+  src: url("https://xrcouture-xrcie.s3.ap-south-1.amazonaws.com/XRC_Homepage/homepage_contents/ClashDisplay-Semibold.ttf");
 }
-@font-face {
-  font-family: Druk Wide Bold; 
-  src: url("./Druk_Collection/Druk\ Wide\ Family/DrukWide-Bold-Trial.otf");
-}
-@font-face {
-  font-family: Druk Wide Medium; 
-  src: url("./Druk_Collection/Druk\ Wide\ Family/DrukWide-Medium-Trial.otf");
-}
-@font-face {
-  font-family: Druk Wide Italic; 
-  src: url("./Druk_Collection/Druk\ Wide\ Family/DrukWide-SuperItalic-Trial.otf");
-}
+
 a {
   font-weight: 500;
   color: #646cff;
